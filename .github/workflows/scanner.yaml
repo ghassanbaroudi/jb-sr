@@ -6,6 +6,10 @@ on:
     - cron: '0 */4 * * *'
   workflow_dispatch: # Allows you to manually trigger the scanner anytime from the GitHub UI
 
+concurrency:
+  group: job-scanner-bot
+  cancel-in-progress: true
+
 jobs:
   scrape-and-notify:
     runs-on: ubuntu-latest
