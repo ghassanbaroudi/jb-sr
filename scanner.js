@@ -86,56 +86,46 @@ async function sendTelegramAlert(job) {
 // Scrape targeted public feeds and job aggregators
 async function fetchJobs() {
   const discoveredJobs = [];
-  const SCRAPER_API_KEY = process.env.SCRAPER_API_KEY;
+  const ADZUNA_APP_ID = process.env.ADZUNA_APP_ID;
+  const ADZUNA_APP_KEY = process.env.ADZUNA_APP_KEY;
 
-  if (!SCRAPER_API_KEY) {
-    console.error('SCRAPER_API_KEY is missing. Add it to GitHub Secrets.');
+  if (!ADZUNA_APP_ID || !ADZUNA_APP_KEY) {
+    console.error('Adzuna credentials missing. Add them to GitHub Secrets.');
     return [];
   }
 
-  // Source 1: Targeted London Graduate Search Feed
+  // Use Adzuna's UK search endpoint. 
+  // 'what' searches keywords, 'where' sets location, 'full_time' ensures it's not a short internship.
+  const url = `https://api.adzuna.com/v1/api/jobs/gb/search/1`;
+
   try {
-    const searchUrl = 'https://www.gradcracker.com/search/all-disciplines/business-degree-jobs-in-london';
-    const res = await axios.get('https://api.scraperapi.com', {
-      params: { api_key: SCRAPER_API_KEY, url: searchUrl }
+    const res = await axios.get(url, {
+      params: {
+        app_id: ADZUNA_APP_ID,
+        app_key: ADZUNA_APP_KEY,
+        what: 'graduate 2027 (analyst OR "asset management" OR banking OR finance OR consulting)',
+        where: 'London',
+        results_per_page: 50,
+        full_time: 1
+      }
     });
 
-    const $ = cheerio.load(res.data);
-    $('.job-card, .tw-mb-4').each((_, el) => {
-      const title = $(el).find('h2, .tw-font-bold').text().trim();
-      const company = $(el).find('.employer-name, .tw-text-gray-600').first().text().trim();
-      const relativeUrl = $(el).find('a').attr('href');
-      const url = relativeUrl?.startsWith('http') ? relativeUrl : `https://www.gradcracker.com${relativeUrl}`;
-
-      if (title && url && matchesCriteria(title)) {
-        const id = `gc_${title.replace(/\s+/g, '_')}_${company.replace(/\s+/g, '_')}`.toLowerCase();
-        discoveredJobs.push({ id, title, company, location: 'London, UK', url });
+    const jobs = res.data.results || [];
+    
+    jobs.forEach(job => {
+      const title = job.title || '';
+      const description = job.description || '';
+      const company = job.company?.display_name || 'Unknown Company';
+      const jobUrl = job.redirect_url;
+      
+      // We still run your strict negative filters to exclude STEM/Quant/No-Visa roles
+      if (title && jobUrl && matchesCriteria(title, description)) {
+        const id = job.id.toString(); 
+        discoveredJobs.push({ id, title, company, location: 'London, UK', url: jobUrl });
       }
     });
   } catch (err) {
-    console.warn('Notice: Primary aggregator fetch skipped:', err.message);
-  }
-
-  // Source 2: Direct Careers Feed
-  try {
-    const bnUrl = 'https://www.brightnetwork.co.uk/graduate-jobs/?location=London&sector=Banking%2C+Private+Equity+%26+Asset+Management&sector=Consulting';
-    const res = await axios.get('https://api.scraperapi.com', {
-      params: { api_key: SCRAPER_API_KEY, url: bnUrl }
-    });
-
-    const $ = cheerio.load(res.data);
-    $('a[href*="/graduate-jobs/"]').each((_, el) => {
-      const title = $(el).find('h3, h4').text().trim();
-      const company = $(el).find('.company-name, span').first().text().trim() || 'London Financial Institution';
-      const url = $(el).attr('href')?.startsWith('http') ? $(el).attr('href') : `https://www.brightnetwork.co.uk${$(el).attr('href')}`;
-
-      if (title && url && matchesCriteria(title)) {
-        const id = `bn_${title.replace(/\s+/g, '_')}_${company.replace(/\s+/g, '_')}`.toLowerCase();
-        discoveredJobs.push({ id, title, company, location: 'London, UK', url });
-      }
-    });
-  } catch (err) {
-    console.warn('Notice: Secondary early-careers source skipped:', err.message);
+    console.error('Error fetching from Adzuna API:', err.response?.data || err.message);
   }
 
   return discoveredJobs;
