@@ -103,10 +103,9 @@ async function fetchJobs() {
       params: {
         app_id: ADZUNA_APP_ID,
         app_key: ADZUNA_APP_KEY,
-        what: 'graduate 2027 (analyst OR "asset management" OR banking OR finance OR consulting)',
+        what: 'graduate OR analyst OR finance OR banking',
         where: 'London',
         results_per_page: 50,
-        full_time: 1
       }
     });
 
