@@ -60,7 +60,7 @@ Respond ONLY with a valid JSON object matching this schema:
     const response = await axios.post(
       'https://api.groq.com/openai/v1/chat/completions',
       {
-        model: 'llama-3.3-70b-versatile',
+        model: 'llama-3.1-8b-instant',
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${description}` }
