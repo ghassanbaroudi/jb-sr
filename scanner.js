@@ -24,29 +24,22 @@ function saveSeenJobs(jobs) {
   fs.writeFileSync(SEEN_JOBS_FILE, JSON.stringify(jobs, null, 2), 'utf-8');
 }
 
-// Open-source LLM evaluator (Llama-3.3-70B via Groq)
+// Open-source LLM evaluator (Llama via Groq)
 async function evaluateJobWithLLM(title, description, company) {
   if (!GROQ_API_KEY) {
-    console.error('GROQ_API_KEY missing. Skipping AI evaluation.');
+    console.error('GROQ_API_KEY missing.');
     return { matches: false };
   }
 
+  // Truncate description to 400 characters to prevent hitting token rate limits
+  const cleanDescription = description.length > 400 
+    ? description.substring(0, 400) + '...' 
+    : description;
+
   const systemPrompt = `
 You are an expert career screener. Evaluate if a job posting matches the candidate's exact profile.
-
-CANDIDATE PROFILE:
-- Education: Business, management, or finance background, graduating in 2027.
-- Target Roles: Asset management, wealth management, corporate banking, investment research, capital markets (non-quant), corporate finance, strategy, or management consulting.
-- Target Level: Full-time graduate programmes or entry-level analyst roles starting in 2027.
-- Location Focus: London/UK.
-- Visa Requirement: Requires UK Skilled Worker visa sponsorship.
-
-STRICT DEALBREAKERS (Reject if ANY are true):
-- It is a Software Engineering, Data Science, IT, or technical builder role.
-- It requires STEM, advanced math, PhD, or is highly quantitative (quant trading/research).
-- It is Audit, pure Tax, Compliance, HR, or back-office operations.
-- It explicitly states NO visa sponsorship or requires unrestricted right to work.
-- It is a summer internship exclusively for 2028 graduates.
+CANDIDATE PROFILE: Business/finance background, 2027 graduate, looking for London graduate programmes in asset/wealth management, corporate banking, investment research, capital markets, corporate finance, strategy, or management consulting. Needs UK visa sponsorship.
+DEALBREAKERS: Reject engineering, software, data science, quant, audit, tax, compliance, HR, or jobs explicitly stating no visa sponsorship.
 
 Respond ONLY with a valid JSON object matching this schema:
 {
@@ -63,7 +56,7 @@ Respond ONLY with a valid JSON object matching this schema:
         model: 'openai/gpt-oss-20b',
         messages: [
           { role: 'system', content: systemPrompt },
-          { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${description}` }
+          { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${cleanDescription}` }
         ],
         temperature: 0.1,
         response_format: { type: 'json_object' }
@@ -167,8 +160,6 @@ async function run() {
     if (evaluation.matches) {
       await sendTelegramAlert(job, evaluation.fit, evaluation.reason);
       newMatches++;
-      // Polite delay to prevent Telegram rate limits
-      await new Promise(r => setTimeout(r, 1500)); 
     }
 
     seenIds.add(job.id);
@@ -180,12 +171,11 @@ async function run() {
       date: new Date().toISOString()
     });
 
-    // Small delay between AI requests to respect Groq rate limits
-    await new Promise(r => setTimeout(r, 500));
+    // Enforce a strict 3-second pause between jobs to completely avoid Groq TPM rate limits
+    await new Promise(r => setTimeout(r, 3000));
   }
 
   saveSeenJobs(seenJobs);
   console.log(`Scan finished. Dispatched ${newMatches} qualifying roles.`);
 }
-
 run();
