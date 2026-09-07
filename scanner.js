@@ -24,17 +24,14 @@ function saveSeenJobs(jobs) {
   fs.writeFileSync(SEEN_JOBS_FILE, JSON.stringify(jobs, null, 2), 'utf-8');
 }
 
-// Open-source LLM evaluator (Llama via Groq)
 async function evaluateJobWithLLM(title, description, company) {
   if (!GROQ_API_KEY) {
     console.error('GROQ_API_KEY missing.');
     return { matches: false };
   }
 
-  // Truncate description to 400 characters to prevent hitting token rate limits
-  const cleanDescription = description.length > 400 
-    ? description.substring(0, 400) + '...' 
-    : description;
+  // We are passing the FULL description without any length restrictions
+  const fullDescription = description || '';
 
   const systemPrompt = `
 You are an expert career screener. Evaluate if a job posting matches the candidate's exact profile.
@@ -56,7 +53,7 @@ Respond ONLY with a valid JSON object matching this schema:
         model: 'openai/gpt-oss-20b',
         messages: [
           { role: 'system', content: systemPrompt },
-          { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${cleanDescription}` }
+          { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${fullDescription}` }
         ],
         temperature: 0.1,
         response_format: { type: 'json_object' }
@@ -66,7 +63,7 @@ Respond ONLY with a valid JSON object matching this schema:
           Authorization: `Bearer ${GROQ_API_KEY}`,
           'Content-Type': 'application/json'
         },
-        timeout: 15000
+        timeout: 20000 // Increased timeout slightly for larger text payloads
       }
     );
 
@@ -145,16 +142,16 @@ async function run() {
   const seenJobs = loadSeenJobs();
   const seenIds = new Set(seenJobs.map(j => (typeof j === 'string' ? j : j.id)));
 
-  console.log(`Starting scan... ${seenIds.size} previously seen jobs in history.`);
+  console.log(`Starting thorough scan... ${seenIds.size} previously seen jobs in history.`);
   const jobs = await fetchJobs();
-  console.log(`Fetched ${jobs.length} candidates from Adzuna.`);
+  console.log(`Fetched ${jobs.length} candidates from Adzuna. Evaluating with full descriptions...`);
 
   let newMatches = 0;
 
   for (const job of jobs) {
     if (seenIds.has(job.id)) continue;
 
-    console.log(`Evaluating with AI: "${job.title}" at ${job.company}...`);
+    console.log(`Evaluating full text: "${job.title}" at ${job.company}...`);
     const evaluation = await evaluateJobWithLLM(job.title, job.description, job.company);
 
     if (evaluation.matches) {
@@ -171,8 +168,8 @@ async function run() {
       date: new Date().toISOString()
     });
 
-    // Enforce a strict 3-second pause between jobs to completely avoid Groq TPM rate limits
-    await new Promise(r => setTimeout(r, 3000));
+    // Pacing delay: 6 seconds per request ensures we stay under Groq's 8,000 TPM limit
+    await new Promise(r => setTimeout(r, 6000));
   }
 
   saveSeenJobs(seenJobs);
