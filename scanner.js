@@ -34,9 +34,18 @@ async function evaluateJobWithLLM(title, description, company) {
   const fullDescription = description || '';
 
   const systemPrompt = `
-You are an expert career screener. Evaluate if a job posting matches the candidate's exact profile.
-CANDIDATE PROFILE: Business/finance background, 2027 graduate, looking for London graduate programmes in asset/wealth management, corporate banking, investment research, capital markets, corporate finance, strategy, or management consulting. Needs UK visa sponsorship.
-DEALBREAKERS: Reject engineering, software, data science, quant, audit, tax, compliance, HR, or jobs explicitly stating no visa sponsorship.
+You are an expert career screener. Evaluate if a job posting matches or is closely related to the candidate's profile.
+
+CANDIDATE PROFILE:
+- Education: Business, management, finance, or general analytical background, graduating in 2027.
+- Target Roles: Asset management, wealth management, corporate banking, investment research, capital markets, corporate finance, strategy, management consulting, client solutions, commercial graduate schemes, risk management, or corporate business analyst roles.
+- Target Level: Full-time graduate programmes or entry-level analyst roles starting in 2027.
+- Location Focus: London/UK.
+- Visa Requirement: Needs UK Skilled Worker visa sponsorship (reject only if it explicitly states no sponsorship).
+
+RELAXED FILTERING INSTRUCTIONS:
+- Be more permissive. If a role is a general graduate scheme, corporate analyst role, or business/commercial rotation that a finance or business graduate could realistically do, mark it as matching ("matches": true) with a fit of "Possible" or "Strong Fit".
+- Only reject ("matches": false) if it is strictly a technical software engineering/coding role, a quantitative research/trading role requiring an advanced STEM PhD, or pure audit/tax/compliance.
 
 Respond ONLY with a valid JSON object matching this schema:
 {
