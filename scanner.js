@@ -83,15 +83,21 @@ async function sendTelegramAlert(job) {
 }
 
 // Scrape targeted public feeds and job aggregators
+// Scrape targeted public feeds and job aggregators
 async function fetchJobs() {
   const discoveredJobs = [];
+  const SCRAPER_API_KEY = process.env.SCRAPER_API_KEY;
+
+  if (!SCRAPER_API_KEY) {
+    console.error('SCRAPER_API_KEY is missing. Add it to GitHub Secrets.');
+    return [];
+  }
 
   // Source 1: Targeted London Graduate Search Feed
   try {
     const searchUrl = 'https://www.gradcracker.com/search/all-disciplines/business-degree-jobs-in-london';
-    const res = await axios.get(searchUrl, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
-      timeout: 10000
+    const res = await axios.get('https://api.scraperapi.com', {
+      params: { api_key: SCRAPER_API_KEY, url: searchUrl }
     });
 
     const $ = cheerio.load(res.data);
@@ -107,15 +113,14 @@ async function fetchJobs() {
       }
     });
   } catch (err) {
-    console.warn('Notice: Primary aggregator fetch skipped or structure updated:', err.message);
+    console.warn('Notice: Primary aggregator fetch skipped:', err.message);
   }
 
-  // Source 2: Direct Careers Feed (Bright Network & Early Careers Index)
+  // Source 2: Direct Careers Feed
   try {
     const bnUrl = 'https://www.brightnetwork.co.uk/graduate-jobs/?location=London&sector=Banking%2C+Private+Equity+%26+Asset+Management&sector=Consulting';
-    const res = await axios.get(bnUrl, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
-      timeout: 10000
+    const res = await axios.get('https://api.scraperapi.com', {
+      params: { api_key: SCRAPER_API_KEY, url: bnUrl }
     });
 
     const $ = cheerio.load(res.data);
