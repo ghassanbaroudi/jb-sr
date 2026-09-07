@@ -1,29 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
-import * as cheerio from 'cheerio';
 
 const SEEN_JOBS_FILE = path.resolve('seen_jobs.json');
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-
-// Keywords that indicate a relevant role
-const POSITIVE_KEYWORDS = [
-  'graduate', 'analyst', 'asset management', 'wealth management',
-  'private banking', 'corporate banking', 'equity research',
-  'investment research', 'capital markets', 'global markets',
-  'sales and trading', 'corporate finance', 'strategy',
-  'management consulting', 'client solutions', 'rotational', '2027'
-];
-
-// Strict exclusions based on your profile and dealbreakers
-const NEGATIVE_KEYWORDS = [
-  'software', 'developer', 'data scientist', 'machine learning', 'artificial intelligence',
-  'quant', 'quantitative', 'phd', 'stem', 'actuarial', 'actuary', 'engineering',
-  'audit', 'tax', 'compliance', 'internal audit', 'accounting scheme',
-  '2028', 'summer intern 2028',
-  'no visa', 'cannot sponsor', 'no sponsorship', 'unrestricted right to work required'
-];
+const ADZUNA_APP_ID = process.env.ADZUNA_APP_ID;
+const ADZUNA_APP_KEY = process.env.ADZUNA_APP_KEY;
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
 function loadSeenJobs() {
   if (fs.existsSync(SEEN_JOBS_FILE)) {
@@ -40,33 +24,76 @@ function saveSeenJobs(jobs) {
   fs.writeFileSync(SEEN_JOBS_FILE, JSON.stringify(jobs, null, 2), 'utf-8');
 }
 
-function matchesCriteria(title, description = '') {
-  const text = `${title} ${description}`.toLowerCase();
-
-  // Exclude unwanted disciplines or negative sponsorship flags
-  const hasNegative = NEGATIVE_KEYWORDS.some(kw => text.includes(kw));
-  if (hasNegative) return false;
-
-  // Must contain at least one target discipline/keyword
-  const hasPositive = POSITIVE_KEYWORDS.some(kw => text.includes(kw));
-  return hasPositive;
-}
-
-async function sendTelegramAlert(job) {
-  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-    console.error('Telegram credentials missing.');
-    return;
+// Open-source LLM evaluator (Llama-3.3-70B via Groq)
+async function evaluateJobWithLLM(title, description, company) {
+  if (!GROQ_API_KEY) {
+    console.error('GROQ_API_KEY missing.');
+    return { matches: false };
   }
 
+  const systemPrompt = `
+You are an expert career screener. Evaluate if a job posting matches the candidate's profile.
+
+CANDIDATE CRITERIA:
+- Education/Background: Business, management, or finance degree graduating in 2027.
+- Target Roles: Asset management, wealth management, corporate banking, investment research, capital markets, sales & trading (non-quant), corporate finance, strategy, management consulting, or client solutions.
+- Target Level: 2027 Graduate programmes, full-time analyst schemes, or off-cycles leading to 2027 full-time.
+
+HARD DEALBREAKERS (Reject if true):
+- Requires STEM, computer science, software development, data science, machine learning, quant/quantitative finance, actuarial, or engineering degrees.
+- Accounting-only, audit, compliance, HR, or pure tax schemes.
+- Summer internships exclusively for 2028 graduates.
+- Explicitly states no visa sponsorship or requires existing unrestricted UK right to work (candidate needs Skilled Worker sponsorship).
+
+Respond ONLY with a valid JSON object matching this schema:
+{
+  "matches": boolean,
+  "fit": "Strong Fit" | "Possible" | "Poor Fit",
+  "reason": "1-2 concise sentences explaining the fit or rejection"
+}
+`;
+
+  try {
+    const response = await axios.post(
+      'https://api.groq.com/openai/v1/chat/completions',
+      {
+        model: 'llama-3.3-70b-versatile',
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${description}` }
+        ],
+        temperature: 0.1,
+        response_format: { type: 'json_object' }
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        timeout: 10000
+      }
+    );
+
+    const result = JSON.parse(response.data.choices[0].message.content);
+    return result;
+  } catch (error) {
+    console.error(`LLM evaluation failed for ${title}:`, error.response?.data?.error?.message || error.message);
+    return { matches: false };
+  }
+}
+
+async function sendTelegramAlert(job, fit, reason) {
+  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return;
+
   const message = [
-    `🎯 *New 2027 Graduate Opportunity Found*`,
+    `🎯 *New Graduate Opportunity Match*`,
     ``,
     `*Role:* ${job.title}`,
     `*Company:* ${job.company}`,
-    `*Location:* ${job.location}`,
-    `*Sponsorship:* Check posting (Excluded known non-sponsors)`,
+    `*Fit:* ${fit}`,
+    `*AI Verdict:* ${reason}`,
     ``,
-    `🔗 [Direct Application Link](${job.url})`
+    `🔗 [Application / Details Link](${job.url})`
   ].join('\n');
 
   try {
@@ -76,81 +103,78 @@ async function sendTelegramAlert(job) {
       parse_mode: 'Markdown',
       disable_web_page_preview: false
     });
-    console.log(`Alert sent for: ${job.title} at ${job.company}`);
-  } catch (error) {
-    console.error(`Failed to send Telegram alert:`, error.response?.data || error.message);
+    console.log(`Alert sent: ${job.title} (${fit})`);
+  } catch (err) {
+    console.error('Failed to send Telegram message:', err.response?.data || err.message);
   }
 }
 
-// Scrape targeted public feeds and job aggregators
-// Scrape targeted public feeds and job aggregators
 async function fetchJobs() {
-  const discoveredJobs = [];
-  const ADZUNA_APP_ID = process.env.ADZUNA_APP_ID;
-  const ADZUNA_APP_KEY = process.env.ADZUNA_APP_KEY;
-
   if (!ADZUNA_APP_ID || !ADZUNA_APP_KEY) {
-    console.error('Adzuna credentials missing. Add them to GitHub Secrets.');
+    console.error('Adzuna credentials missing.');
     return [];
   }
 
-  // Use Adzuna's UK search endpoint. 
-  // 'what' searches keywords, 'where' sets location, 'full_time' ensures it's not a short internship.
   const url = `https://api.adzuna.com/v1/api/jobs/gb/search/1`;
-
   try {
     const res = await axios.get(url, {
       params: {
         app_id: ADZUNA_APP_ID,
         app_key: ADZUNA_APP_KEY,
-        what: 'graduate OR analyst OR finance OR banking',
+        what: 'graduate OR analyst OR "asset management" OR banking OR consulting',
         where: 'London',
-        results_per_page: 50,
+        results_per_page: 25,
+        max_days_old: 2
       }
     });
 
-    const jobs = res.data.results || [];
-    
-    jobs.forEach(job => {
-      const title = job.title || '';
-      const description = job.description || '';
-      const company = job.company?.display_name || 'Unknown Company';
-      const jobUrl = job.redirect_url;
-      
-      // We still run your strict negative filters to exclude STEM/Quant/No-Visa roles
-      if (title && jobUrl && matchesCriteria(title, description)) {
-        const id = job.id.toString(); 
-        discoveredJobs.push({ id, title, company, location: 'London, UK', url: jobUrl });
-      }
-    });
+    return (res.data.results || []).map(job => ({
+      id: job.id.toString(),
+      title: job.title || '',
+      company: job.company?.display_name || 'Unknown Employer',
+      description: job.description || '',
+      url: job.redirect_url
+    }));
   } catch (err) {
-    console.error('Error fetching from Adzuna API:', err.response?.data || err.message);
+    console.error('Adzuna fetch error:', err.response?.data || err.message);
+    return [];
   }
-
-  return discoveredJobs;
 }
 
 async function run() {
   const seenJobs = loadSeenJobs();
   const seenIds = new Set(seenJobs.map(j => (typeof j === 'string' ? j : j.id)));
 
-  console.log(`Starting scan... Loaded ${seenIds.size} previously seen jobs.`);
-  const currentJobs = await fetchJobs();
+  console.log(`Starting scan... ${seenIds.size} previously seen jobs in history.`);
+  const jobs = await fetchJobs();
+  console.log(`Fetched ${jobs.length} candidates from search endpoint.`);
 
-  let newCount = 0;
-  for (const job of currentJobs) {
-    if (!seenIds.has(job.id)) {
-      await sendTelegramAlert(job);
-      seenIds.add(job.id);
-      seenJobs.push({ id: job.id, title: job.title, company: job.company, date: new Date().toISOString() });
-      newCount++;
-      // Polite 1-second pause to prevent Telegram rate limits
+  let newMatches = 0;
+
+  for (const job of jobs) {
+    if (seenIds.has(job.id)) continue;
+
+    console.log(`Evaluating: "${job.title}" at ${job.company}...`);
+    const evaluation = await evaluateJobWithLLM(job.title, job.description, job.company);
+
+    if (evaluation.matches) {
+      await sendTelegramAlert(job, evaluation.fit, evaluation.reason);
+      newMatches++;
       await new Promise(r => setTimeout(r, 1000));
     }
+
+    seenIds.add(job.id);
+    seenJobs.push({
+      id: job.id,
+      title: job.title,
+      company: job.company,
+      matched: evaluation.matches,
+      date: new Date().toISOString()
+    });
   }
 
   saveSeenJobs(seenJobs);
-  console.log(`Scan completed. Dispatched ${newCount} new opportunities.`);
+  console.log(`Scan finished. Dispatched ${newMatches} qualifying roles.`);
 }
 
 run();
