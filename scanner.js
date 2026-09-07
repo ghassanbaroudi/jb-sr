@@ -113,31 +113,41 @@ async function sendTelegramAlert(job, fit, reason) {
 
 async function fetchJobs() {
   const url = `https://api.adzuna.com/v1/api/jobs/gb/search/1`;
-  try {
-    const res = await axios.get(url, {
-      params: {
-        app_id: ADZUNA_APP_ID,
-        app_key: ADZUNA_APP_KEY,
-        what: 'graduate OR analyst OR banking OR consulting OR "asset management"',
-        where: 'London',
-        results_per_page: 50, // Expanded to pull 50 roles per scan
-        max_days_old: 2 // Only pull fresh jobs to save API calls
-      }
-    });
+  const searchTerms = ['graduate', 'analyst']; // Two simple, broad searches
+  let allJobs = [];
 
-    return (res.data.results || []).map(job => ({
-      id: job.id.toString(),
-      title: job.title || '',
-      company: job.company?.display_name || 'Unknown Employer',
-      description: job.description || '',
-      url: job.redirect_url
-    }));
+  try {
+    for (const term of searchTerms) {
+      const res = await axios.get(url, {
+        params: {
+          app_id: ADZUNA_APP_ID,
+          app_key: ADZUNA_APP_KEY,
+          what: term,
+          where: 'London',
+          results_per_page: 30 // Pulls 30 of each, 60 total
+        }
+      });
+
+      const jobs = (res.data.results || []).map(job => ({
+        id: job.id.toString(),
+        title: job.title || '',
+        company: job.company?.display_name || 'Unknown Employer',
+        description: job.description || '',
+        url: job.redirect_url
+      }));
+
+      allJobs = allJobs.concat(jobs);
+    }
+
+    // Deduplicate in case a job appeared in both the 'graduate' and 'analyst' searches
+    const uniqueJobs = Array.from(new Map(allJobs.map(job => [job.id, job])).values());
+    return uniqueJobs;
+
   } catch (err) {
     console.error('Adzuna fetch error:', err.response?.data || err.message);
     return [];
   }
 }
-
 async function run() {
   const seenJobs = loadSeenJobs();
   const seenIds = new Set(seenJobs.map(j => (typeof j === 'string' ? j : j.id)));
