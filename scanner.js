@@ -7,6 +7,7 @@ const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 const ADZUNA_APP_ID = process.env.ADZUNA_APP_ID;
 const ADZUNA_APP_KEY = process.env.ADZUNA_APP_KEY;
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
 function loadSeenJobs() {
   if (fs.existsSync(SEEN_JOBS_FILE)) {
@@ -23,16 +24,88 @@ function saveSeenJobs(jobs) {
   fs.writeFileSync(SEEN_JOBS_FILE, JSON.stringify(jobs, null, 2), 'utf-8');
 }
 
-async function sendTelegramAlert(job) {
+// Open-source LLM evaluator (Llama-3.3-70B via Groq)
+async function evaluateJobWithLLM(title, description, company) {
+  if (!GROQ_API_KEY) {
+    console.error('GROQ_API_KEY missing. Skipping AI evaluation.');
+    return { matches: false };
+  }
+
+  const systemPrompt = `
+You are an expert career screener. Evaluate if a job posting matches the candidate's exact profile.
+
+CANDIDATE PROFILE:
+- Education: Business, management, or finance background, graduating in 2027.
+- Target Roles: Asset management, wealth management, corporate banking, investment research, capital markets (non-quant), corporate finance, strategy, or management consulting.
+- Target Level: Full-time graduate programmes or entry-level analyst roles starting in 2027.
+- Location Focus: London/UK.
+- Visa Requirement: Requires UK Skilled Worker visa sponsorship.
+
+STRICT DEALBREAKERS (Reject if ANY are true):
+- It is a Software Engineering, Data Science, IT, or technical builder role.
+- It requires STEM, advanced math, PhD, or is highly quantitative (quant trading/research).
+- It is Audit, pure Tax, Compliance, HR, or back-office operations.
+- It explicitly states NO visa sponsorship or requires unrestricted right to work.
+- It is a summer internship exclusively for 2028 graduates.
+
+Respond ONLY with a valid JSON object matching this schema:
+{
+  "matches": boolean,
+  "fit": "Strong Fit" | "Possible" | "Poor Fit",
+  "reason": "1 short sentence explaining why."
+}
+`;
+
+  try {
+    const response = await axios.post(
+      'https://api.groq.com/openai/v1/chat/completions',
+      {
+        model: 'llama-3.3-70b-versatile',
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: `Company: ${company}\nTitle: ${title}\nDescription: ${description}` }
+        ],
+        temperature: 0.1,
+        response_format: { type: 'json_object' }
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        timeout: 15000
+      }
+    );
+
+    return JSON.parse(response.data.choices[0].message.content);
+  } catch (error) {
+    console.error(`LLM evaluation failed for ${title}:`, error.response?.data?.error?.message || error.message);
+    return { matches: false };
+  }
+}
+
+async function sendTelegramAlert(job, fit, reason) {
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return;
-  const message = `🚨 *Test Alert: Pipeline is Working!* 🚨\n\n*Role:* ${job.title}\n*Company:* ${job.company}\n\n🔗 [Link](${job.url})`;
+
+  const message = [
+    `🎯 *New 2027 Graduate Opportunity*`,
+    ``,
+    `*Role:* ${job.title}`,
+    `*Company:* ${job.company}`,
+    `*Fit:* ${fit}`,
+    `*AI Verdict:* ${reason}`,
+    ``,
+    `🔗 [Application Link](${job.url})`
+  ].join('\n');
+
   try {
     await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       chat_id: TELEGRAM_CHAT_ID,
       text: message,
-      parse_mode: 'Markdown'
+      parse_mode: 'Markdown',
+      disable_web_page_preview: false
     });
-    console.log(`Alert sent: ${job.title}`);
+    console.log(`Alert sent: ${job.title} (${fit})`);
   } catch (err) {
     console.error('Failed to send Telegram message:', err.response?.data || err.message);
   }
@@ -45,9 +118,10 @@ async function fetchJobs() {
       params: {
         app_id: ADZUNA_APP_ID,
         app_key: ADZUNA_APP_KEY,
-        what: 'analyst', // Extremely broad search
+        what: 'graduate OR analyst OR banking OR consulting OR "asset management"',
         where: 'London',
-        results_per_page: 5 
+        results_per_page: 50, // Expanded to pull 50 roles per scan
+        max_days_old: 2 // Only pull fresh jobs to save API calls
       }
     });
 
@@ -55,6 +129,7 @@ async function fetchJobs() {
       id: job.id.toString(),
       title: job.title || '',
       company: job.company?.display_name || 'Unknown Employer',
+      description: job.description || '',
       url: job.redirect_url
     }));
   } catch (err) {
@@ -67,27 +142,40 @@ async function run() {
   const seenJobs = loadSeenJobs();
   const seenIds = new Set(seenJobs.map(j => (typeof j === 'string' ? j : j.id)));
 
-  console.log('Fetching raw test jobs from Adzuna...');
+  console.log(`Starting scan... ${seenIds.size} previously seen jobs in history.`);
   const jobs = await fetchJobs();
-  console.log(`Found ${jobs.length} jobs.`);
+  console.log(`Fetched ${jobs.length} candidates from Adzuna.`);
 
-  let dispatched = 0;
+  let newMatches = 0;
+
   for (const job of jobs) {
     if (seenIds.has(job.id)) continue;
 
-    console.log(`Sending to Telegram: ${job.title}`);
-    await sendTelegramAlert(job);
-    dispatched++;
+    console.log(`Evaluating with AI: "${job.title}" at ${job.company}...`);
+    const evaluation = await evaluateJobWithLLM(job.title, job.description, job.company);
+
+    if (evaluation.matches) {
+      await sendTelegramAlert(job, evaluation.fit, evaluation.reason);
+      newMatches++;
+      // Polite delay to prevent Telegram rate limits
+      await new Promise(r => setTimeout(r, 1500)); 
+    }
 
     seenIds.add(job.id);
-    seenJobs.push({ id: job.id, title: job.title });
+    seenJobs.push({
+      id: job.id,
+      title: job.title,
+      company: job.company,
+      matched: evaluation.matches,
+      date: new Date().toISOString()
+    });
 
-    // Only send the first 2 we find to verify functionality
-    if (dispatched >= 2) break; 
+    // Small delay between AI requests to respect Groq rate limits
+    await new Promise(r => setTimeout(r, 500));
   }
 
   saveSeenJobs(seenJobs);
-  console.log(`Test complete. Dispatched ${dispatched} test roles.`);
+  console.log(`Scan finished. Dispatched ${newMatches} qualifying roles.`);
 }
 
 run();
