@@ -502,5 +502,131 @@
     "company": "Cantor Fitzgerald",
     "matched": false,
     "date": "2026-09-08T19:06:15.253Z"
+  },
+  {
+    "id": "5859491612",
+    "title": "Map AI Analyst",
+    "company": "OneForma",
+    "matched": false,
+    "date": "2026-09-08T22:07:50.005Z"
+  },
+  {
+    "id": "5862926841",
+    "title": "Commodities Analyst / Trader",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-09-08T22:07:56.512Z"
+  },
+  {
+    "id": "5831982761",
+    "title": "Senior Business Analyst",
+    "company": "twentyAI",
+    "matched": false,
+    "date": "2026-09-08T22:08:03.254Z"
+  },
+  {
+    "id": "5862926829",
+    "title": "VP Quantitative Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-09-08T22:08:09.726Z"
+  },
+  {
+    "id": "5800237320",
+    "title": "Quantitative Analyst - Leversys",
+    "company": "Leversys",
+    "matched": false,
+    "date": "2026-09-08T22:08:16.309Z"
+  },
+  {
+    "id": "5849592849",
+    "title": "Senior Capital Analyst",
+    "company": "Eames Consulting",
+    "matched": false,
+    "date": "2026-09-08T22:08:22.986Z"
+  },
+  {
+    "id": "5867109147",
+    "title": "Senior Reserving Analyst",
+    "company": "Eames Consulting",
+    "matched": false,
+    "date": "2026-09-08T22:08:29.629Z"
+  },
+  {
+    "id": "5862926811",
+    "title": "Business Analyst / Systems Analyst - Policy Administration System Migration",
+    "company": "Anson Mccade",
+    "matched": true,
+    "date": "2026-09-08T22:08:36.610Z"
+  },
+  {
+    "id": "5856483990",
+    "title": "AML Analyst - US Law Firm",
+    "company": "Ryder Reid Legal Limited",
+    "matched": true,
+    "date": "2026-09-08T22:08:43.415Z"
+  },
+  {
+    "id": "5875536150",
+    "title": "Data Analyst - music",
+    "company": "Handle Recruitment Limited",
+    "matched": false,
+    "date": "2026-09-08T22:08:49.920Z"
+  },
+  {
+    "id": "5859492510",
+    "title": "Data Analyst (AI Training)",
+    "company": "OneForma",
+    "matched": false,
+    "date": "2026-09-08T22:08:56.489Z"
+  },
+  {
+    "id": "5836707709",
+    "title": "Analyst / Senior Analyst - Oil Research - London Stock Exchange Group",
+    "company": "London Stock Exchange Group",
+    "matched": true,
+    "date": "2026-09-08T22:09:03.189Z"
+  },
+  {
+    "id": "5870618317",
+    "title": "Infrastructure Support Analyst - TWE47014",
+    "company": "twentyAI",
+    "matched": false,
+    "date": "2026-09-08T22:09:09.551Z"
+  },
+  {
+    "id": "5662341622",
+    "title": "Operations Analyst - Macro / Credit",
+    "company": "One Ten Associates",
+    "matched": false,
+    "date": "2026-09-08T22:09:16.086Z"
+  },
+  {
+    "id": "5874269608",
+    "title": "Quantitative Analyst - Equity - Execuzen",
+    "company": "Execuzen",
+    "matched": false,
+    "date": "2026-09-08T22:09:22.780Z"
+  },
+  {
+    "id": "5862926822",
+    "title": "Senior Cyber Security Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-09-08T22:09:29.001Z"
+  },
+  {
+    "id": "5867108979",
+    "title": "Senior Pricing Analyst - Reinsurance",
+    "company": "Eames Consulting",
+    "matched": false,
+    "date": "2026-09-08T22:09:35.510Z"
+  },
+  {
+    "id": "5661817806",
+    "title": "Quantitative Analyst (C++) - Quanteam",
+    "company": "Quanteam",
+    "matched": false,
+    "date": "2026-09-08T22:09:42.180Z"
   }
 ]
