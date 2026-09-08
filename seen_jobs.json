@@ -467,5 +467,33 @@
     "company": "Spectrum IT Recruitment Limited",
     "matched": false,
     "date": "2026-09-08T08:24:43.647Z"
+  },
+  {
+    "id": "5855007785",
+    "title": "Graduate/Trainee Recruitment Consultant",
+    "company": "SW6 Associates Limited",
+    "matched": false,
+    "date": "2026-09-08T15:34:35.503Z"
+  },
+  {
+    "id": "5787972192",
+    "title": "Senior Credit Strategy Analyst",
+    "company": "Zopa Bank",
+    "matched": false,
+    "date": "2026-09-08T15:34:42.276Z"
+  },
+  {
+    "id": "5840355546",
+    "title": "Lead Product Analyst - Send",
+    "company": "Wise",
+    "matched": false,
+    "date": "2026-09-08T15:34:49.190Z"
+  },
+  {
+    "id": "5861182353",
+    "title": "Risk Technology Data Analyst",
+    "company": "BGC Partners",
+    "matched": true,
+    "date": "2026-09-08T15:34:56.317Z"
   }
 ]
