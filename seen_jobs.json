@@ -418,5 +418,110 @@
     "company": "BGC Partners",
     "matched": true,
     "date": "2026-09-09T09:33:14.294Z"
+  },
+  {
+    "id": "5855007785",
+    "title": "Graduate/Trainee Recruitment Consultant",
+    "company": "SW6 Associates Limited",
+    "matched": false,
+    "date": "2026-09-09T15:29:08.787Z"
+  },
+  {
+    "id": "5866532956",
+    "title": "Catastrophe Analyst",
+    "company": "Gallagher",
+    "matched": true,
+    "date": "2026-09-09T15:29:15.568Z"
+  },
+  {
+    "id": "5873627844",
+    "title": "HEMS Analyst",
+    "company": "Centrica - CHP",
+    "matched": false,
+    "date": "2026-09-09T15:29:22.001Z"
+  },
+  {
+    "id": "5874378635",
+    "title": "Services Analyst",
+    "company": "Royal Botanic Gardens, Kew",
+    "matched": false,
+    "date": "2026-09-09T15:29:28.478Z"
+  },
+  {
+    "id": "5859664604",
+    "title": "Claims Bordereaux Analyst",
+    "company": "DVF Recruitment",
+    "matched": true,
+    "date": "2026-09-09T15:29:35.543Z"
+  },
+  {
+    "id": "5871322775",
+    "title": "Finance Systems Analyst",
+    "company": "DGH Recruitment",
+    "matched": true,
+    "date": "2026-09-09T15:29:42.663Z"
+  },
+  {
+    "id": "5876749263",
+    "title": "Cloud FinOps Analyst",
+    "company": "Manufacturing Recruitment Limited",
+    "matched": true,
+    "date": "2026-09-09T15:29:49.761Z"
+  },
+  {
+    "id": "5876749435",
+    "title": "Runbook Project Analyst",
+    "company": "MDM Consultants Limited",
+    "matched": false,
+    "date": "2026-09-09T15:29:56.379Z"
+  },
+  {
+    "id": "5868991615",
+    "title": "Senior Implementation Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-09-09T15:30:03.332Z"
+  },
+  {
+    "id": "5841598546",
+    "title": "Retail Media Analyst",
+    "company": "Sanderson Recruitment",
+    "matched": false,
+    "date": "2026-09-09T15:30:10.581Z"
+  },
+  {
+    "id": "5821876512",
+    "title": "eDiscovery Support Analyst",
+    "company": "LATHAM & WATKINS LLP",
+    "matched": false,
+    "date": "2026-09-09T15:30:17.040Z"
+  },
+  {
+    "id": "5875137685",
+    "title": "Commercial Finance Analyst",
+    "company": "Marc Daniels",
+    "matched": true,
+    "date": "2026-09-09T15:30:23.992Z"
+  },
+  {
+    "id": "5855112187",
+    "title": "Senior Credit Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-09-09T15:30:30.412Z"
+  },
+  {
+    "id": "5875459074",
+    "title": "Equities Settlement Analyst",
+    "company": "Teksystems",
+    "matched": true,
+    "date": "2026-09-09T15:30:37.967Z"
+  },
+  {
+    "id": "5855112202",
+    "title": "Sr Benefits Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-09-09T15:30:44.695Z"
   }
 ]
