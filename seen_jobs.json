@@ -635,5 +635,19 @@
     "company": "Southern Housing",
     "matched": false,
     "date": "2026-09-09T01:58:06.617Z"
+  },
+  {
+    "id": "5875850085",
+    "title": "Quantitative Analyst",
+    "company": "Drax",
+    "matched": false,
+    "date": "2026-09-09T08:26:56.323Z"
+  },
+  {
+    "id": "5855007614",
+    "title": "Cost & Commercial Analyst",
+    "company": "Integral UK Ltd",
+    "matched": true,
+    "date": "2026-09-09T08:27:03.311Z"
   }
 ]
