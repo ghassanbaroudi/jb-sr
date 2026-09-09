@@ -523,5 +523,12 @@
     "company": "Hackajob Ltd",
     "matched": false,
     "date": "2026-09-09T15:30:44.695Z"
+  },
+  {
+    "id": "5870409092",
+    "title": "Finance Analyst - London",
+    "company": "SSP",
+    "matched": true,
+    "date": "2026-09-09T18:54:50.641Z"
   }
 ]
