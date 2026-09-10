@@ -607,5 +607,47 @@
     "company": "Permax Recruitment Limited",
     "matched": true,
     "date": "2026-09-10T15:25:00.423Z"
+  },
+  {
+    "id": "5878649223",
+    "title": "Finance Graduate Programme",
+    "company": "RELX",
+    "matched": true,
+    "date": "2026-09-10T18:47:40.188Z"
+  },
+  {
+    "id": "5878466345",
+    "title": "Systems Analyst",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-09-10T18:47:46.665Z"
+  },
+  {
+    "id": "5878466058",
+    "title": "Business Analyst",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-09-10T18:47:53.217Z"
+  },
+  {
+    "id": "5872927926",
+    "title": "Senior Catastrophe Modelling Analyst",
+    "company": "Comtecs",
+    "matched": false,
+    "date": "2026-09-10T18:47:59.728Z"
+  },
+  {
+    "id": "5857182928",
+    "title": "Trainee Intelligence Analyst - no experience required",
+    "company": "Army",
+    "matched": false,
+    "date": "2026-09-10T18:48:06.083Z"
+  },
+  {
+    "id": "5859491612",
+    "title": "Map AI Analyst",
+    "company": "OneForma",
+    "matched": false,
+    "date": "2026-09-10T18:48:12.753Z"
   }
 ]
