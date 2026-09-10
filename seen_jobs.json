@@ -558,5 +558,54 @@
     "company": "Spectrum IT Recruitment Limited",
     "matched": false,
     "date": "2026-09-10T08:28:34.421Z"
+  },
+  {
+    "id": "5856591545",
+    "title": "Underwriting Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-09-10T15:24:20.823Z"
+  },
+  {
+    "id": "5841506762",
+    "title": "Asbestos Site Analyst",
+    "company": "Future Select",
+    "matched": false,
+    "date": "2026-09-10T15:24:27.114Z"
+  },
+  {
+    "id": "5858065557",
+    "title": "Senior Product Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-09-10T15:24:33.526Z"
+  },
+  {
+    "id": "5878351577",
+    "title": "Asbestos Analyst",
+    "company": "Kingdom People",
+    "matched": false,
+    "date": "2026-09-10T15:24:39.802Z"
+  },
+  {
+    "id": "5862861694",
+    "title": "Senior Technical Pricing Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-09-10T15:24:46.308Z"
+  },
+  {
+    "id": "5870674571",
+    "title": "Operations Analyst (Insurance)",
+    "company": "Insight Recruitment Solutions",
+    "matched": true,
+    "date": "2026-09-10T15:24:53.470Z"
+  },
+  {
+    "id": "5878352188",
+    "title": "Graduate Data Analyst",
+    "company": "Permax Recruitment Limited",
+    "matched": true,
+    "date": "2026-09-10T15:25:00.423Z"
   }
 ]
