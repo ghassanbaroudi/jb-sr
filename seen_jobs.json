@@ -544,5 +544,19 @@
     "company": "JAMES GEORGE RECRUITMENT LIMITED",
     "matched": true,
     "date": "2026-09-10T01:54:40.559Z"
+  },
+  {
+    "id": "5872654787",
+    "title": "HEMS Analyst",
+    "company": "Centrica - CHP",
+    "matched": false,
+    "date": "2026-09-10T08:28:27.918Z"
+  },
+  {
+    "id": "5877892518",
+    "title": "Quantitative Analyst",
+    "company": "Spectrum IT Recruitment Limited",
+    "matched": false,
+    "date": "2026-09-10T08:28:34.421Z"
   }
 ]
