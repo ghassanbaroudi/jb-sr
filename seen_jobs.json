@@ -782,5 +782,26 @@
     "company": "The Dorchester",
     "matched": false,
     "date": "2026-09-14T02:09:01.627Z"
+  },
+  {
+    "id": "5883198962",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-09-14T17:11:12.277Z"
+  },
+  {
+    "id": "5883633671",
+    "title": "Quantitative Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-09-14T17:11:18.729Z"
+  },
+  {
+    "id": "5883633787",
+    "title": "Data Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-09-14T17:11:25.122Z"
   }
 ]
