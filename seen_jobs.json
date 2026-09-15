@@ -831,5 +831,19 @@
     "company": "Wingstop UK",
     "matched": true,
     "date": "2026-09-15T02:16:16.916Z"
+  },
+  {
+    "id": "5883347580",
+    "title": "Underwriting Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-09-15T09:02:19.038Z"
+  },
+  {
+    "id": "5883095801",
+    "title": "Marketing Technology Analyst",
+    "company": "Fisher Investments",
+    "matched": false,
+    "date": "2026-09-15T09:02:25.474Z"
   }
 ]
