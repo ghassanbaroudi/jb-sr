@@ -929,5 +929,61 @@
     "company": "Wise",
     "matched": true,
     "date": "2026-09-16T08:54:45.877Z"
+  },
+  {
+    "id": "5885925570",
+    "title": "Engineering Graduate Programme (Fullstack)",
+    "company": "London Stock Exchange Group",
+    "matched": false,
+    "date": "2026-09-16T15:42:35.756Z"
+  },
+  {
+    "id": "5885917279",
+    "title": "Business Analyst Graduate Programme",
+    "company": "London Stock Exchange Group",
+    "matched": true,
+    "date": "2026-09-16T15:42:42.718Z"
+  },
+  {
+    "id": "5885926210",
+    "title": "Risk and Compliance Graduate Programme 2027",
+    "company": "Howden",
+    "matched": true,
+    "date": "2026-09-16T15:42:50.097Z"
+  },
+  {
+    "id": "5885924267",
+    "title": "Legal & Technical Claims Graduate Programme 2027",
+    "company": "Howden",
+    "matched": false,
+    "date": "2026-09-16T15:42:56.605Z"
+  },
+  {
+    "id": "5885922399",
+    "title": "Marine, Cargo & Logistics Graduate Programme 2027",
+    "company": "Howden",
+    "matched": true,
+    "date": "2026-09-16T15:43:03.798Z"
+  },
+  {
+    "id": "5885929804",
+    "title": "Credit & Political Risk Graduate Programme 2027",
+    "company": "Howden",
+    "matched": true,
+    "date": "2026-09-16T15:43:10.809Z"
+  },
+  {
+    "id": "5885928010",
+    "title": "Credit Risk Solutions Graduate Programme 2027",
+    "company": "Howden",
+    "matched": true,
+    "date": "2026-09-16T15:43:17.746Z"
+  },
+  {
+    "id": "5886331750",
+    "title": "Service Desk Analyst",
+    "company": "Experis",
+    "matched": false,
+    "date": "2026-09-16T15:43:24.026Z"
   }
 ]
