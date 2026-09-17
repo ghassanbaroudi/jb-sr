@@ -1062,5 +1062,19 @@
     "company": "Turner & Townsend",
     "matched": false,
     "date": "2026-09-17T15:49:30.186Z"
+  },
+  {
+    "id": "5885765591",
+    "title": "Tax Analyst (Compliance & Reporting)",
+    "company": "Morson Edge",
+    "matched": false,
+    "date": "2026-09-17T22:30:59.254Z"
+  },
+  {
+    "id": "5887308083",
+    "title": "Graduate Technology & Finance Analyst",
+    "company": "Permax Recruitment Limited",
+    "matched": true,
+    "date": "2026-09-17T22:31:06.449Z"
   }
 ]
