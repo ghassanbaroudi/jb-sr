@@ -1083,5 +1083,54 @@
     "company": "Wingstop UK",
     "matched": true,
     "date": "2026-09-18T08:34:12.411Z"
+  },
+  {
+    "id": "5889010605",
+    "title": "Engineering Graduate Programme (Backend)",
+    "company": "London Stock Exchange Group",
+    "matched": false,
+    "date": "2026-09-18T15:22:05.607Z"
+  },
+  {
+    "id": "5889017399",
+    "title": "Engineering Graduate Programme (Fullstack)",
+    "company": "London Stock Exchange Group",
+    "matched": false,
+    "date": "2026-09-18T15:22:11.912Z"
+  },
+  {
+    "id": "5889029188",
+    "title": "Business Analyst Graduate Programme",
+    "company": "London Stock Exchange Group",
+    "matched": true,
+    "date": "2026-09-18T15:22:18.802Z"
+  },
+  {
+    "id": "5889041842",
+    "title": "Engineering Graduate Programme (Cloud, Devops)",
+    "company": "London Stock Exchange Group",
+    "matched": false,
+    "date": "2026-09-18T15:22:25.156Z"
+  },
+  {
+    "id": "5889028364",
+    "title": "Business Management and Sales Graduate Programme",
+    "company": "London Stock Exchange Group",
+    "matched": true,
+    "date": "2026-09-18T15:22:32.115Z"
+  },
+  {
+    "id": "5879515424",
+    "title": "Sr. Analyst, Falcon Complete (Remote, GBR)",
+    "company": "CrowdStrike",
+    "matched": false,
+    "date": "2026-09-18T15:22:38.572Z"
+  },
+  {
+    "id": "5879515425",
+    "title": "Sr. Analyst, Falcon Complete (Remote, GBR)",
+    "company": "CrowdStrike",
+    "matched": false,
+    "date": "2026-09-18T15:22:45.211Z"
   }
 ]
