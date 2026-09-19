@@ -1139,5 +1139,33 @@
     "company": "JLA Resourcing Ltd",
     "matched": false,
     "date": "2026-09-18T18:43:32.260Z"
+  },
+  {
+    "id": "5889853144",
+    "title": "Service Desk Analyst",
+    "company": "Keystream Group Limited",
+    "matched": false,
+    "date": "2026-09-19T02:03:55.812Z"
+  },
+  {
+    "id": "5889872552",
+    "title": "Credit Portfolio Analyst",
+    "company": "CBC Recruitment Solutions",
+    "matched": true,
+    "date": "2026-09-19T02:04:02.904Z"
+  },
+  {
+    "id": "5889872550",
+    "title": "IT Applications Analyst",
+    "company": "Salt",
+    "matched": false,
+    "date": "2026-09-19T02:04:09.389Z"
+  },
+  {
+    "id": "5889872553",
+    "title": "Regulatory and Commercial Analyst",
+    "company": "Searchstone Ltd",
+    "matched": true,
+    "date": "2026-09-19T02:04:16.436Z"
   }
 ]
