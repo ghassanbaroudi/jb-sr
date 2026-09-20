@@ -1216,5 +1216,19 @@
     "company": "FDM Group",
     "matched": false,
     "date": "2026-09-20T15:02:04.979Z"
+  },
+  {
+    "id": "5890311006",
+    "title": "SAP Finance systems analyst",
+    "company": "Cedar Recruitment",
+    "matched": false,
+    "date": "2026-09-20T22:01:00.894Z"
+  },
+  {
+    "id": "5888888356",
+    "title": "Part-Qualified Finance Analyst",
+    "company": "Walker Hamill",
+    "matched": true,
+    "date": "2026-09-20T22:01:07.961Z"
   }
 ]
