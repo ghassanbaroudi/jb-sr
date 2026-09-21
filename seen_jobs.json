@@ -1244,5 +1244,26 @@
     "company": "Fisher Investments",
     "matched": false,
     "date": "2026-09-21T09:23:20.456Z"
+  },
+  {
+    "id": "5892337386",
+    "title": "Underwriting Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-09-21T17:19:58.539Z"
+  },
+  {
+    "id": "5892770502",
+    "title": "Group FP&A Analyst",
+    "company": "Walker Hamill",
+    "matched": true,
+    "date": "2026-09-21T17:20:05.706Z"
+  },
+  {
+    "id": "5892758740",
+    "title": "Senior Global Benefits Analyst",
+    "company": "TEEMZ LTD",
+    "matched": false,
+    "date": "2026-09-21T17:20:12.237Z"
   }
 ]
