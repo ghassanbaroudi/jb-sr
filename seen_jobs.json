@@ -1230,5 +1230,19 @@
     "company": "Walker Hamill",
     "matched": true,
     "date": "2026-09-20T22:01:07.961Z"
+  },
+  {
+    "id": "5892308778",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-09-21T09:23:13.812Z"
+  },
+  {
+    "id": "5892428748",
+    "title": "Brand Intelligence Analyst",
+    "company": "Fisher Investments",
+    "matched": false,
+    "date": "2026-09-21T09:23:20.456Z"
   }
 ]
