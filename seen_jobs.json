@@ -1426,5 +1426,19 @@
     "company": "London Stock Exchange Group",
     "matched": false,
     "date": "2026-09-23T15:43:14.054Z"
+  },
+  {
+    "id": "5873277388",
+    "title": "Digital Transformation Analyst",
+    "company": "Sureserve Group",
+    "matched": true,
+    "date": "2026-09-23T19:18:00.334Z"
+  },
+  {
+    "id": "5893710364",
+    "title": "Senior Reserving Analyst (Lloyd's)",
+    "company": "High Finance  Limited",
+    "matched": false,
+    "date": "2026-09-23T19:18:06.803Z"
   }
 ]
