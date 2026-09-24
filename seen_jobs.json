@@ -1482,5 +1482,40 @@
     "company": "Hackajob Ltd",
     "matched": false,
     "date": "2026-09-24T08:49:56.970Z"
+  },
+  {
+    "id": "5896928258",
+    "title": "Business Graduate Programme (FTSE Russell)",
+    "company": "London Stock Exchange Group",
+    "matched": true,
+    "date": "2026-09-24T16:04:15.311Z"
+  },
+  {
+    "id": "5896911482",
+    "title": "Business Graduate Programme (Data and Analytics)",
+    "company": "London Stock Exchange Group",
+    "matched": true,
+    "date": "2026-09-24T16:04:22.413Z"
+  },
+  {
+    "id": "5896919124",
+    "title": "2027 Audit Graduate Programme - London",
+    "company": "BDO",
+    "matched": false,
+    "date": "2026-09-24T16:04:28.775Z"
+  },
+  {
+    "id": "5896928981",
+    "title": "2027 Advisory Graduate Programme - London",
+    "company": "BDO",
+    "matched": true,
+    "date": "2026-09-24T16:04:36.066Z"
+  },
+  {
+    "id": "5897068686",
+    "title": "Business Systems Analyst - AI adoption",
+    "company": "Spectrum IT Recruitment Limited",
+    "matched": false,
+    "date": "2026-09-24T16:04:42.420Z"
   }
 ]
