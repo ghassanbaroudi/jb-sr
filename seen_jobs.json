@@ -1580,5 +1580,40 @@
     "company": "Hackajob Ltd",
     "matched": false,
     "date": "2026-09-25T09:10:43.002Z"
+  },
+  {
+    "id": "5898050038",
+    "title": "FP and A Analyst",
+    "company": "Marc Daniels",
+    "matched": true,
+    "date": "2026-09-25T16:04:42.637Z"
+  },
+  {
+    "id": "5898050021",
+    "title": "Credit Risk Analyst",
+    "company": "Centrica",
+    "matched": true,
+    "date": "2026-09-25T16:04:49.480Z"
+  },
+  {
+    "id": "5898050416",
+    "title": "Mandarin speaking Finance Analyst",
+    "company": "People First Recruitment",
+    "matched": false,
+    "date": "2026-09-25T16:04:56.103Z"
+  },
+  {
+    "id": "5890315839",
+    "title": "Senior Service Charge Analyst",
+    "company": "Southern Housing",
+    "matched": false,
+    "date": "2026-09-25T16:05:02.519Z"
+  },
+  {
+    "id": "5898050415",
+    "title": "Knowledge Engineering Senior Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-09-25T16:05:08.899Z"
   }
 ]
