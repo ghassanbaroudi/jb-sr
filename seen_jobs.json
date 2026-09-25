@@ -1538,5 +1538,19 @@
     "company": "The Curve Group",
     "matched": false,
     "date": "2026-09-24T22:48:34.874Z"
+  },
+  {
+    "id": "5897533452",
+    "title": "FP and A Analyst",
+    "company": "Marc Daniels",
+    "matched": true,
+    "date": "2026-09-25T02:18:09.575Z"
+  },
+  {
+    "id": "5897547916",
+    "title": "Commodities Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-09-25T02:18:16.041Z"
   }
 ]
