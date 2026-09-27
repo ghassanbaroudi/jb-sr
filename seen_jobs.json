@@ -1699,5 +1699,19 @@
     "company": "O.C.S. Consulting Plc",
     "matched": false,
     "date": "2026-09-26T15:18:11.287Z"
+  },
+  {
+    "id": "5900440698",
+    "title": "Disclosure Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-09-27T09:37:47.268Z"
+  },
+  {
+    "id": "5900439994",
+    "title": "Credit Risk Analyst",
+    "company": "Centrica - CHP",
+    "matched": true,
+    "date": "2026-09-27T09:37:53.962Z"
   }
 ]
