@@ -1776,5 +1776,26 @@
     "company": "NEWTO TRAINING LIMITED",
     "matched": true,
     "date": "2026-09-29T10:13:28.457Z"
+  },
+  {
+    "id": "5902833391",
+    "title": "Sanctions Control Business Analyst",
+    "company": "Barclays",
+    "matched": true,
+    "date": "2026-09-29T17:11:31.138Z"
+  },
+  {
+    "id": "5902946549",
+    "title": "Customer Screening Business Analyst",
+    "company": "BARCLAYS",
+    "matched": false,
+    "date": "2026-09-29T17:11:37.819Z"
+  },
+  {
+    "id": "5902682008",
+    "title": "Pension Project Analyst",
+    "company": "PPF ",
+    "matched": true,
+    "date": "2026-09-29T17:11:44.995Z"
   }
 ]
