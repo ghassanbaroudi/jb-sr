@@ -1797,5 +1797,47 @@
     "company": "PPF ",
     "matched": true,
     "date": "2026-09-29T17:11:44.995Z"
+  },
+  {
+    "id": "5903000641",
+    "title": "Finance Analyst",
+    "company": "Hays Accountancy and Finance",
+    "matched": true,
+    "date": "2026-09-29T23:15:34.835Z"
+  },
+  {
+    "id": "5903086417",
+    "title": "Product Analyst",
+    "company": "Stepstone UK",
+    "matched": false,
+    "date": "2026-09-29T23:15:41.166Z"
+  },
+  {
+    "id": "5903000609",
+    "title": "Data Analyst - music",
+    "company": "Handle Recruitment Limited",
+    "matched": false,
+    "date": "2026-09-29T23:15:47.606Z"
+  },
+  {
+    "id": "5903000611",
+    "title": "FP&A Analyst | Property",
+    "company": "Hays Accountancy and Finance",
+    "matched": true,
+    "date": "2026-09-29T23:15:54.702Z"
+  },
+  {
+    "id": "5903084329",
+    "title": "FP&A / Strategy Analyst",
+    "company": "Insight Recruitment Solutions",
+    "matched": true,
+    "date": "2026-09-29T23:16:01.542Z"
+  },
+  {
+    "id": "5903086043",
+    "title": "Strategy / Business Analyst (Insurance)",
+    "company": "Insight Recruitment Solutions",
+    "matched": true,
+    "date": "2026-09-29T23:16:09.045Z"
   }
 ]
