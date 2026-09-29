@@ -1720,5 +1720,61 @@
     "company": "Network IT",
     "matched": false,
     "date": "2026-09-28T18:54:12.979Z"
+  },
+  {
+    "id": "5902661086",
+    "title": "Procurement Graduate Programme",
+    "company": "Lidl GB",
+    "matched": true,
+    "date": "2026-09-29T10:12:39.328Z"
+  },
+  {
+    "id": "5902661090",
+    "title": "Buying Graduate Programme",
+    "company": "Lidl GB",
+    "matched": true,
+    "date": "2026-09-29T10:12:46.359Z"
+  },
+  {
+    "id": "5902661081",
+    "title": "Buying Operations Graduate Programme",
+    "company": "Lidl GB",
+    "matched": true,
+    "date": "2026-09-29T10:12:53.443Z"
+  },
+  {
+    "id": "5902661070",
+    "title": "Corporate Affairs Graduate Programme",
+    "company": "Lidl GB",
+    "matched": true,
+    "date": "2026-09-29T10:13:00.590Z"
+  },
+  {
+    "id": "5902661079",
+    "title": "Estate & Retail Operations Graduate Programme",
+    "company": "Lidl GB",
+    "matched": false,
+    "date": "2026-09-29T10:13:07.418Z"
+  },
+  {
+    "id": "5901946769",
+    "title": "Pension Project Analyst",
+    "company": "PPF ",
+    "matched": true,
+    "date": "2026-09-29T10:13:14.563Z"
+  },
+  {
+    "id": "5886759608",
+    "title": "Senior Finance Systems Analyst - Aderant",
+    "company": "Circle Group",
+    "matched": false,
+    "date": "2026-09-29T10:13:21.142Z"
+  },
+  {
+    "id": "5901379417",
+    "title": "Trainee Data Analyst No Experience Required",
+    "company": "NEWTO TRAINING LIMITED",
+    "matched": true,
+    "date": "2026-09-29T10:13:28.457Z"
   }
 ]
