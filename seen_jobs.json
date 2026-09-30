@@ -1839,5 +1839,26 @@
     "company": "Insight Recruitment Solutions",
     "matched": true,
     "date": "2026-09-29T23:16:09.045Z"
+  },
+  {
+    "id": "5903601961",
+    "title": "Assurance Graduate Programmes - April and September 2027 intake",
+    "company": "EY",
+    "matched": false,
+    "date": "2026-09-30T10:04:22.042Z"
+  },
+  {
+    "id": "5902661096",
+    "title": "Marketing Graduate Programme",
+    "company": "Lidl GB",
+    "matched": false,
+    "date": "2026-09-30T10:04:28.454Z"
+  },
+  {
+    "id": "5902661076",
+    "title": "Customer Experience Graduate Programme",
+    "company": "Lidl GB",
+    "matched": false,
+    "date": "2026-09-30T10:04:34.821Z"
   }
 ]
