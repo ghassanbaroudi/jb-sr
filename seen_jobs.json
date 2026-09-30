@@ -1860,5 +1860,19 @@
     "company": "Lidl GB",
     "matched": false,
     "date": "2026-09-30T10:04:34.821Z"
+  },
+  {
+    "id": "5903703212",
+    "title": "Senior Capital Analyst",
+    "company": "High Finance  Limited",
+    "matched": false,
+    "date": "2026-09-30T17:09:31.024Z"
+  },
+  {
+    "id": "5898050427",
+    "title": "Sr Business Systems Analyst (Vertex)",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-09-30T17:09:38.442Z"
   }
 ]
