@@ -2007,5 +2007,19 @@
     "company": "Army",
     "matched": false,
     "date": "2026-10-01T02:56:37.431Z"
+  },
+  {
+    "id": "5903992226",
+    "title": "Underwriting Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-10-01T10:32:22.332Z"
+  },
+  {
+    "id": "5903988277",
+    "title": "Sr Benefits Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-10-01T10:32:28.856Z"
   }
 ]
