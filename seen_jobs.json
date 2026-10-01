@@ -2021,5 +2021,89 @@
     "company": "Hackajob Ltd",
     "matched": false,
     "date": "2026-10-01T10:32:28.856Z"
+  },
+  {
+    "id": "5901146277",
+    "title": "Senior Business Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-01T17:39:09.798Z"
+  },
+  {
+    "id": "5901146227",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-01T17:39:16.714Z"
+  },
+  {
+    "id": "5903971896",
+    "title": "Senior PLM Analyst",
+    "company": "Orion Electrotech Sales",
+    "matched": false,
+    "date": "2026-10-01T17:39:23.316Z"
+  },
+  {
+    "id": "5903991623",
+    "title": "Insurance Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-10-01T17:39:30.469Z"
+  },
+  {
+    "id": "5903983495",
+    "title": "Proposal Review Analyst",
+    "company": "JAMES GEORGE RECRUITMENT LIMITED",
+    "matched": true,
+    "date": "2026-10-01T17:39:37.433Z"
+  },
+  {
+    "id": "5903992253",
+    "title": "Claims Bordereaux Analyst",
+    "company": "DVF Recruitment",
+    "matched": true,
+    "date": "2026-10-01T17:39:44.479Z"
+  },
+  {
+    "id": "5903988113",
+    "title": "Senior Reward Analyst",
+    "company": "Frazer Jones",
+    "matched": false,
+    "date": "2026-10-01T17:39:50.958Z"
+  },
+  {
+    "id": "5903989127",
+    "title": "Senior Capital Analyst",
+    "company": "High Finance  Limited",
+    "matched": false,
+    "date": "2026-10-01T17:39:57.429Z"
+  },
+  {
+    "id": "5903989225",
+    "title": "Digital Transformation Analyst",
+    "company": "Sureserve Group",
+    "matched": true,
+    "date": "2026-10-01T17:40:04.359Z"
+  },
+  {
+    "id": "5905532903",
+    "title": "Credit Risk Analyst",
+    "company": "Centrica - CHP",
+    "matched": true,
+    "date": "2026-10-01T17:40:11.392Z"
+  },
+  {
+    "id": "5905538866",
+    "title": "Senior CSIRT Analyst",
+    "company": "G-Research",
+    "matched": false,
+    "date": "2026-10-01T17:40:18.035Z"
+  },
+  {
+    "id": "5905538692",
+    "title": "Security Operations Analyst",
+    "company": "G-Research",
+    "matched": false,
+    "date": "2026-10-01T17:40:24.530Z"
   }
 ]
