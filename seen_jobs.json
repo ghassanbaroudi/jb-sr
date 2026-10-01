@@ -1902,5 +1902,110 @@
     "company": "Carlyle International",
     "matched": true,
     "date": "2026-09-30T23:18:54.402Z"
+  },
+  {
+    "id": "5903601960",
+    "title": "Tax Graduate Programmes -April and September 2027 intake",
+    "company": "EY",
+    "matched": false,
+    "date": "2026-10-01T02:55:02.821Z"
+  },
+  {
+    "id": "5903601348",
+    "title": "Audit Graduate Programme - April and September 2027 intake",
+    "company": "EY",
+    "matched": false,
+    "date": "2026-10-01T02:55:09.228Z"
+  },
+  {
+    "id": "5903970824",
+    "title": "Asbestos Analyst",
+    "company": "Kingdom People",
+    "matched": false,
+    "date": "2026-10-01T02:55:15.621Z"
+  },
+  {
+    "id": "5903970437",
+    "title": "Pension Project Analyst",
+    "company": "PPF ",
+    "matched": true,
+    "date": "2026-10-01T02:55:22.728Z"
+  },
+  {
+    "id": "5903975367",
+    "title": "Senior Product Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-10-01T02:55:29.256Z"
+  },
+  {
+    "id": "5903989227",
+    "title": "Quantitative Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-10-01T02:55:35.884Z"
+  },
+  {
+    "id": "5904316578",
+    "title": "Quantitative Analyst",
+    "company": "G-Research",
+    "matched": false,
+    "date": "2026-10-01T02:55:42.316Z"
+  },
+  {
+    "id": "5904316559",
+    "title": "Insight Analyst",
+    "company": "G-Research",
+    "matched": false,
+    "date": "2026-10-01T02:55:49.336Z"
+  },
+  {
+    "id": "5903971974",
+    "title": "Senior Technical Pricing Analyst",
+    "company": "Hackajob Ltd",
+    "matched": false,
+    "date": "2026-10-01T02:55:56.453Z"
+  },
+  {
+    "id": "5904187849",
+    "title": "Lead Product Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-10-01T02:56:03.543Z"
+  },
+  {
+    "id": "5903989222",
+    "title": "Cloud FinOps Analyst",
+    "company": "Manufacturing Recruitment Limited",
+    "matched": true,
+    "date": "2026-10-01T02:56:10.514Z"
+  },
+  {
+    "id": "5904186438",
+    "title": "Senior Credit Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-10-01T02:56:17.856Z"
+  },
+  {
+    "id": "5904316545",
+    "title": "Senior Sanctions Analyst",
+    "company": "Maples Group",
+    "matched": false,
+    "date": "2026-10-01T02:56:24.458Z"
+  },
+  {
+    "id": "5903981068",
+    "title": "Mandarin speaking Finance Analyst",
+    "company": "People First Recruitment",
+    "matched": false,
+    "date": "2026-10-01T02:56:30.995Z"
+  },
+  {
+    "id": "5903968523",
+    "title": "Trainee Intelligence Analyst - no experience required",
+    "company": "Army",
+    "matched": false,
+    "date": "2026-10-01T02:56:37.431Z"
   }
 ]
