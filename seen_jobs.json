@@ -2112,5 +2112,47 @@
     "company": "Arcade Food Hall",
     "matched": true,
     "date": "2026-10-01T23:32:40.252Z"
+  },
+  {
+    "id": "5906758853",
+    "title": "Catastrophe Analyst",
+    "company": "Gallagher",
+    "matched": true,
+    "date": "2026-10-02T02:57:36.654Z"
+  },
+  {
+    "id": "5906758698",
+    "title": "Technology Analyst",
+    "company": "Rathbones Group Plc",
+    "matched": false,
+    "date": "2026-10-02T02:57:43.121Z"
+  },
+  {
+    "id": "5906742325",
+    "title": "SuccessFactors Compensation Analyst",
+    "company": "Experis",
+    "matched": false,
+    "date": "2026-10-02T02:57:49.581Z"
+  },
+  {
+    "id": "5906713422",
+    "title": "Senior Integration Analyst & Developer",
+    "company": "Outsource",
+    "matched": false,
+    "date": "2026-10-02T02:57:56.099Z"
+  },
+  {
+    "id": "5906569689",
+    "title": "Professional Services Operations Analyst",
+    "company": "Tungsten Automation Northern Ireland Ltd",
+    "matched": true,
+    "date": "2026-10-02T02:58:03.186Z"
+  },
+  {
+    "id": "5906758641",
+    "title": "Data Analyst/Analytics",
+    "company": "McCabe & Barton",
+    "matched": true,
+    "date": "2026-10-02T02:58:10.046Z"
   }
 ]
