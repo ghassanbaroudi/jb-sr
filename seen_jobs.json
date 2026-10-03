@@ -2182,5 +2182,19 @@
     "company": "High Finance  Limited",
     "matched": false,
     "date": "2026-10-02T23:23:56.065Z"
+  },
+  {
+    "id": "5907689170",
+    "title": "2027 Finance Graduate Programme",
+    "company": "Schroders",
+    "matched": true,
+    "date": "2026-10-03T15:22:11.749Z"
+  },
+  {
+    "id": "5907679706",
+    "title": "2027 Internal Audit Graduate Programme",
+    "company": "Schroders",
+    "matched": true,
+    "date": "2026-10-03T15:22:18.949Z"
   }
 ]
