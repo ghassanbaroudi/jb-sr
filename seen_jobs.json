@@ -2245,5 +2245,33 @@
     "company": "Q Analysts",
     "matched": false,
     "date": "2026-10-04T22:35:41.277Z"
+  },
+  {
+    "id": "5912110843",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-05T10:57:06.187Z"
+  },
+  {
+    "id": "5912110892",
+    "title": "Senior Business Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-05T10:57:13.464Z"
+  },
+  {
+    "id": "5912319670",
+    "title": "SEM Analyst",
+    "company": "Intertek",
+    "matched": false,
+    "date": "2026-10-05T10:57:19.888Z"
+  },
+  {
+    "id": "5912319639",
+    "title": "Compensation and Benefits Analyst",
+    "company": "CMC Markets UK Plc",
+    "matched": true,
+    "date": "2026-10-05T10:57:26.884Z"
   }
 ]
