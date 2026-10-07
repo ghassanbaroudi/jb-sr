@@ -2343,5 +2343,75 @@
     "company": "Spectrum IT Recruitment Limited",
     "matched": false,
     "date": "2026-10-07T10:40:24.366Z"
+  },
+  {
+    "id": "5917238922",
+    "title": "Lead Data Analyst",
+    "company": "Marshall Wolfe Ltd",
+    "matched": false,
+    "date": "2026-10-07T18:04:42.595Z"
+  },
+  {
+    "id": "5906758702",
+    "title": "IT PMO/FINANCE ANALYST",
+    "company": "Sanderson Recruitment",
+    "matched": false,
+    "date": "2026-10-07T18:04:49.024Z"
+  },
+  {
+    "id": "5903988047",
+    "title": "Tax Analyst (Compliance & Reporting)",
+    "company": "Morson Edge",
+    "matched": false,
+    "date": "2026-10-07T18:04:55.325Z"
+  },
+  {
+    "id": "5904186571",
+    "title": "Sr Business Systems Analyst",
+    "company": "Hackajob Ltd",
+    "matched": true,
+    "date": "2026-10-07T18:05:02.591Z"
+  },
+  {
+    "id": "5903978684",
+    "title": "Senior Finance Systems Analyst - Aderant",
+    "company": "Circle Group",
+    "matched": false,
+    "date": "2026-10-07T18:05:09.299Z"
+  },
+  {
+    "id": "5863587386",
+    "title": "Information Security Incident Response Analyst",
+    "company": "Ntt Data",
+    "matched": false,
+    "date": "2026-10-07T18:05:15.718Z"
+  },
+  {
+    "id": "5854394781",
+    "title": "Senior Analyst, Model Risk Management",
+    "company": "Intercontinental Exchange Holdings",
+    "matched": false,
+    "date": "2026-10-07T18:05:22.813Z"
+  },
+  {
+    "id": "5854394779",
+    "title": "Analyst/Associate, Real Estate Debt",
+    "company": "Government of Singapore Investment Corporation",
+    "matched": true,
+    "date": "2026-10-07T18:05:29.552Z"
+  },
+  {
+    "id": "5830168078",
+    "title": "IP Sales & Stock Analyst",
+    "company": "Bandai Namco Amusement Europe Ltd.",
+    "matched": false,
+    "date": "2026-10-07T18:05:36.000Z"
+  },
+  {
+    "id": "5914127810",
+    "title": "Analyst",
+    "company": "Consilio",
+    "matched": false,
+    "date": "2026-10-07T18:05:42.535Z"
   }
 ]
