@@ -2441,5 +2441,19 @@
     "company": "Anson Mccade",
     "matched": false,
     "date": "2026-10-07T23:55:30.990Z"
+  },
+  {
+    "id": "5912955288",
+    "title": "Principal Pricing Analyst",
+    "company": "Vermelo",
+    "matched": false,
+    "date": "2026-10-08T18:06:34.658Z"
+  },
+  {
+    "id": "5918418817",
+    "title": "Service Charge Analyst",
+    "company": "Southern Housing",
+    "matched": true,
+    "date": "2026-10-08T18:06:42.201Z"
   }
 ]
