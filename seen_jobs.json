@@ -2483,5 +2483,33 @@
     "company": "Southern Housing",
     "matched": false,
     "date": "2026-10-10T10:11:53.541Z"
+  },
+  {
+    "id": "5922501718",
+    "title": "Senior InfoSec Analyst",
+    "company": "Spectrum IT Recruitment Limited",
+    "matched": false,
+    "date": "2026-10-11T02:41:12.991Z"
+  },
+  {
+    "id": "5922502427",
+    "title": "Vulnerability Management Analyst",
+    "company": "Salt",
+    "matched": false,
+    "date": "2026-10-11T02:41:19.611Z"
+  },
+  {
+    "id": "5922501715",
+    "title": "Incident Response Analyst",
+    "company": "Harvey Nash",
+    "matched": false,
+    "date": "2026-10-11T02:41:26.057Z"
+  },
+  {
+    "id": "5922502338",
+    "title": "Senior Revenue Analyst",
+    "company": "Robert Half Limited",
+    "matched": false,
+    "date": "2026-10-11T02:41:32.609Z"
   }
 ]
