@@ -2518,5 +2518,33 @@
     "company": "Capgemini",
     "matched": true,
     "date": "2026-10-11T10:24:04.994Z"
+  },
+  {
+    "id": "5920939393",
+    "title": "Product Analyst/Consultant Operator",
+    "company": "Carbon60",
+    "matched": true,
+    "date": "2026-10-11T23:17:38.766Z"
+  },
+  {
+    "id": "5920085173",
+    "title": "Linear Rates Quantitative Analyst",
+    "company": "ALFA TECHNOLOGY RECRUITMENT LTD",
+    "matched": false,
+    "date": "2026-10-11T23:17:45.375Z"
+  },
+  {
+    "id": "5922501215",
+    "title": "Business Systems Analyst - AI adoption",
+    "company": "Spectrum IT Recruitment Limited",
+    "matched": false,
+    "date": "2026-10-11T23:17:52.084Z"
+  },
+  {
+    "id": "5918605950",
+    "title": "Brand Protection Analyst",
+    "company": "Dr. Martens UK",
+    "matched": false,
+    "date": "2026-10-11T23:17:58.522Z"
   }
 ]
