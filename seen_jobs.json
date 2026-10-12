@@ -2546,5 +2546,33 @@
     "company": "Dr. Martens UK",
     "matched": false,
     "date": "2026-10-11T23:17:58.522Z"
+  },
+  {
+    "id": "5920567368",
+    "title": "Quantitative Analyst",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-10-12T03:05:08.420Z"
+  },
+  {
+    "id": "5898318267",
+    "title": "Quantitative Analyst",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-10-12T03:05:14.857Z"
+  },
+  {
+    "id": "5895160657",
+    "title": "Risk Analyst",
+    "company": "Intercontinental Exchange",
+    "matched": true,
+    "date": "2026-10-12T03:05:21.785Z"
+  },
+  {
+    "id": "5880055801",
+    "title": "Operations Analyst",
+    "company": "Leverton Search",
+    "matched": true,
+    "date": "2026-10-12T03:05:28.910Z"
   }
 ]
