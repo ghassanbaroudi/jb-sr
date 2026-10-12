@@ -2588,5 +2588,26 @@
     "company": "Capital One UK",
     "matched": true,
     "date": "2026-10-12T11:25:41.946Z"
+  },
+  {
+    "id": "5924621345",
+    "title": "Acquisitions Analyst / Sr Analyst",
+    "company": "MCR Property Group",
+    "matched": true,
+    "date": "2026-10-12T20:32:36.015Z"
+  },
+  {
+    "id": "5924618154",
+    "title": "Space Planning Analyst",
+    "company": "Salt",
+    "matched": false,
+    "date": "2026-10-12T20:32:42.531Z"
+  },
+  {
+    "id": "5917220034",
+    "title": "Commodities Analyst",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-10-12T20:32:48.929Z"
   }
 ]
