@@ -2574,5 +2574,19 @@
     "company": "Leverton Search",
     "matched": true,
     "date": "2026-10-12T03:05:28.910Z"
+  },
+  {
+    "id": "5923708547",
+    "title": "Senior Business Analyst",
+    "company": "Capital One UK",
+    "matched": false,
+    "date": "2026-10-12T11:25:34.793Z"
+  },
+  {
+    "id": "5923708431",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-12T11:25:41.946Z"
   }
 ]
