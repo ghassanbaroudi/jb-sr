@@ -2721,5 +2721,82 @@
     "company": "Capgemini",
     "matched": true,
     "date": "2026-10-19T02:13:42.586Z"
+  },
+  {
+    "id": "5933905979",
+    "title": "HR Benefits Analyst",
+    "company": "Fisher Investments",
+    "matched": true,
+    "date": "2026-10-19T17:54:03.413Z"
+  },
+  {
+    "id": "5933905981",
+    "title": "Senior Financial Regulatory Analyst",
+    "company": "Fisher Investments",
+    "matched": false,
+    "date": "2026-10-19T17:54:10.020Z"
+  },
+  {
+    "id": "5903989165",
+    "title": "Senior People Insights Analyst",
+    "company": "Frazer Jones",
+    "matched": false,
+    "date": "2026-10-19T17:54:16.630Z"
+  },
+  {
+    "id": "5931817898",
+    "title": "Financial Analyst - working capital",
+    "company": "Morson Edge",
+    "matched": true,
+    "date": "2026-10-19T17:54:23.760Z"
+  },
+  {
+    "id": "5930831710",
+    "title": "Portfolio Finance Analyst",
+    "company": "McCabe & Barton",
+    "matched": true,
+    "date": "2026-10-19T17:54:30.803Z"
+  },
+  {
+    "id": "5929063471",
+    "title": "Senior Business Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-10-19T17:54:37.325Z"
+  },
+  {
+    "id": "5908557721",
+    "title": "KYC Analyst - Associate - SMBC",
+    "company": "SMBC",
+    "matched": true,
+    "date": "2026-10-19T17:54:44.486Z"
+  },
+  {
+    "id": "5927958788",
+    "title": "Lead Threat Response Operations Analyst",
+    "company": "Pfizer",
+    "matched": false,
+    "date": "2026-10-19T17:54:51.012Z"
+  },
+  {
+    "id": "5898739131",
+    "title": "Senior Product Analyst (12 Month FTC)",
+    "company": "Just Eat Takeaway.com",
+    "matched": false,
+    "date": "2026-10-19T17:54:57.724Z"
+  },
+  {
+    "id": "5858291059",
+    "title": "Business Analyst at Challenger Exchange",
+    "company": "Harrington Starr",
+    "matched": true,
+    "date": "2026-10-19T17:55:04.660Z"
+  },
+  {
+    "id": "5903969897",
+    "title": "Asbestos Surveyor, Analyst, P402, P403, P404, COR7521",
+    "company": "Corriculo Ltd",
+    "matched": false,
+    "date": "2026-10-19T17:55:11.023Z"
   }
 ]
