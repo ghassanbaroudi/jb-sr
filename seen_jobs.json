@@ -2798,5 +2798,26 @@
     "company": "Corriculo Ltd",
     "matched": false,
     "date": "2026-10-19T17:55:11.023Z"
+  },
+  {
+    "id": "5934498756",
+    "title": "Credit Analyst – Project Finance",
+    "company": "Prime Personnel",
+    "matched": true,
+    "date": "2026-10-19T23:11:34.398Z"
+  },
+  {
+    "id": "5920874960",
+    "title": "Hotel Performance and Budget Analyst",
+    "company": "Elle Recruitment",
+    "matched": true,
+    "date": "2026-10-19T23:11:41.159Z"
+  },
+  {
+    "id": "5934501016",
+    "title": "Junior Investment Operations Analyst",
+    "company": "PPF ",
+    "matched": true,
+    "date": "2026-10-19T23:11:48.270Z"
   }
 ]
