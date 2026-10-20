@@ -2826,5 +2826,26 @@
     "company": "Hays Accountancy and Finance",
     "matched": false,
     "date": "2026-10-20T02:28:19.259Z"
+  },
+  {
+    "id": "5934612709",
+    "title": "Trainee/Graduate Recruitment Consultant",
+    "company": "SW6 Associates Limited",
+    "matched": false,
+    "date": "2026-10-20T08:58:49.882Z"
+  },
+  {
+    "id": "5935092080",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-20T08:58:57.147Z"
+  },
+  {
+    "id": "5935212353",
+    "title": "Quantitative Analyst",
+    "company": "Spectrum IT Recruitment Limited",
+    "matched": false,
+    "date": "2026-10-20T08:59:03.564Z"
   }
 ]
