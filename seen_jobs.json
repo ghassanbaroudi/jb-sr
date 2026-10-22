@@ -2959,5 +2959,54 @@
     "company": "High Finance  Limited",
     "matched": false,
     "date": "2026-10-21T22:52:22.356Z"
+  },
+  {
+    "id": "5937067482",
+    "title": "Reward Analyst",
+    "company": "Frazer Jones",
+    "matched": false,
+    "date": "2026-10-22T02:17:14.829Z"
+  },
+  {
+    "id": "5937231965",
+    "title": "IMS Analyst",
+    "company": "Morson Edge",
+    "matched": false,
+    "date": "2026-10-22T02:17:21.219Z"
+  },
+  {
+    "id": "5937067511",
+    "title": "HR Analyst, Data, Financial Services",
+    "company": "Harvey Nash",
+    "matched": false,
+    "date": "2026-10-22T02:17:28.075Z"
+  },
+  {
+    "id": "5796949457",
+    "title": "Analyst",
+    "company": "Leversys",
+    "matched": true,
+    "date": "2026-10-22T02:17:35.457Z"
+  },
+  {
+    "id": "5882727278",
+    "title": "Analyst",
+    "company": "Lendable",
+    "matched": true,
+    "date": "2026-10-22T02:17:42.580Z"
+  },
+  {
+    "id": "5896793671",
+    "title": "Senior Analyst / Associate - Selby Jennings",
+    "company": "Selby Jennings",
+    "matched": false,
+    "date": "2026-10-22T02:17:49.191Z"
+  },
+  {
+    "id": "5890568734",
+    "title": "Account Analyst, Middle East - PIMCO",
+    "company": "PIMCO",
+    "matched": false,
+    "date": "2026-10-22T02:17:55.680Z"
   }
 ]
