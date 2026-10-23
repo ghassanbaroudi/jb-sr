@@ -3050,5 +3050,33 @@
     "company": "Public Sector Resourcing CWS",
     "matched": true,
     "date": "2026-10-23T02:22:54.257Z"
+  },
+  {
+    "id": "5939029857",
+    "title": "2027 Graduate Programme - Financial Reporting",
+    "company": "Rothesay Graduates",
+    "matched": true,
+    "date": "2026-10-23T08:54:43.499Z"
+  },
+  {
+    "id": "5938888646",
+    "title": "Operational Data Analyst",
+    "company": "Just Eat Takeaway.com",
+    "matched": true,
+    "date": "2026-10-23T08:54:50.590Z"
+  },
+  {
+    "id": "5938645231",
+    "title": "Customer Insight Analyst",
+    "company": "Motability Operations",
+    "matched": true,
+    "date": "2026-10-23T08:54:57.374Z"
+  },
+  {
+    "id": "5938978613",
+    "title": "Digital Workplace Analyst (EMEA) – UK",
+    "company": "Le Creuset UK Ltd",
+    "matched": false,
+    "date": "2026-10-23T08:55:04.072Z"
   }
 ]
