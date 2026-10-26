@@ -3204,5 +3204,47 @@
     "company": "Spectrum IT Recruitment Limited",
     "matched": false,
     "date": "2026-10-26T09:28:10.473Z"
+  },
+  {
+    "id": "5942246447",
+    "title": "SOC Analyst",
+    "company": "Anson Mccade",
+    "matched": false,
+    "date": "2026-10-26T17:48:56.895Z"
+  },
+  {
+    "id": "5931812642",
+    "title": "Conflicts Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": true,
+    "date": "2026-10-26T17:49:03.866Z"
+  },
+  {
+    "id": "5931812638",
+    "title": "Senior Conflicts Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": false,
+    "date": "2026-10-26T17:49:10.433Z"
+  },
+  {
+    "id": "5940484324",
+    "title": "Senior Business Resilience Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": false,
+    "date": "2026-10-26T17:49:17.228Z"
+  },
+  {
+    "id": "5931812596",
+    "title": "Senior Legal Technology Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": false,
+    "date": "2026-10-26T17:49:23.645Z"
+  },
+  {
+    "id": "5942354685",
+    "title": "Capital Markets Operations Analyst",
+    "company": "Teksystems",
+    "matched": true,
+    "date": "2026-10-26T17:49:30.291Z"
   }
 ]
