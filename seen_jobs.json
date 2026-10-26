@@ -3162,5 +3162,47 @@
     "company": "Teksystems",
     "matched": true,
     "date": "2026-10-25T15:11:51.808Z"
+  },
+  {
+    "id": "5941953739",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-26T09:27:35.813Z"
+  },
+  {
+    "id": "5941997330",
+    "title": "HR Benefits Analyst",
+    "company": "Fisher Investments",
+    "matched": true,
+    "date": "2026-10-26T09:27:42.863Z"
+  },
+  {
+    "id": "5941999931",
+    "title": "European Market Analyst",
+    "company": "Get Staffed Online Recruitment",
+    "matched": true,
+    "date": "2026-10-26T09:27:49.881Z"
+  },
+  {
+    "id": "5941999926",
+    "title": "Regulatory Reporting Operations Analyst",
+    "company": "Teksystems",
+    "matched": true,
+    "date": "2026-10-26T09:27:56.898Z"
+  },
+  {
+    "id": "5941997325",
+    "title": "Senior Financial Regulatory Analyst",
+    "company": "Fisher Investments",
+    "matched": true,
+    "date": "2026-10-26T09:28:04.094Z"
+  },
+  {
+    "id": "5941999859",
+    "title": "Senior Cloud Security Trust Analyst",
+    "company": "Spectrum IT Recruitment Limited",
+    "matched": false,
+    "date": "2026-10-26T09:28:10.473Z"
   }
 ]
