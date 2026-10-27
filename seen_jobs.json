@@ -3253,5 +3253,26 @@
     "company": "Checkout.com",
     "matched": true,
     "date": "2026-10-26T23:26:14.022Z"
+  },
+  {
+    "id": "5926934647",
+    "title": "Graduate Programme 2027 UK (Advisory)",
+    "company": "Hatch",
+    "matched": false,
+    "date": "2026-10-27T09:25:05.477Z"
+  },
+  {
+    "id": "5936459260",
+    "title": "2027 Talent Operations Graduate Programme",
+    "company": "Checkout.com",
+    "matched": true,
+    "date": "2026-10-27T09:25:12.570Z"
+  },
+  {
+    "id": "5943212554",
+    "title": "Senior ETRM Analyst Developer",
+    "company": "Centrica - CHP",
+    "matched": false,
+    "date": "2026-10-27T09:25:19.049Z"
   }
 ]
