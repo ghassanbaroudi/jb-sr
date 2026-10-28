@@ -3309,5 +3309,26 @@
     "company": "Leonardo Royal Hotel St Paul's",
     "matched": false,
     "date": "2026-10-28T10:07:08.421Z"
+  },
+  {
+    "id": "5944598022",
+    "title": "Group Controls Senior Analyst",
+    "company": "Sky",
+    "matched": true,
+    "date": "2026-10-28T17:33:50.992Z"
+  },
+  {
+    "id": "5944588094",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-10-28T17:33:58.730Z"
+  },
+  {
+    "id": "5944220375",
+    "title": "Graduate Technology & Finance Analyst",
+    "company": "Permax Recruitment Limited",
+    "matched": true,
+    "date": "2026-10-28T17:34:07.060Z"
   }
 ]
