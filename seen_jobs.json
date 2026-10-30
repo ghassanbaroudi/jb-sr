@@ -3365,5 +3365,19 @@
     "company": "RBW Consulting",
     "matched": false,
     "date": "2026-10-30T03:20:41.190Z"
+  },
+  {
+    "id": "5946282177",
+    "title": "Finance and Operations Analyst",
+    "company": "Desmond Motors Ltd",
+    "matched": true,
+    "date": "2026-10-30T10:31:33.712Z"
+  },
+  {
+    "id": "5946676691",
+    "title": "Immigration Analyst - Japanese Speaking",
+    "company": "AMS CWS",
+    "matched": false,
+    "date": "2026-10-30T10:31:40.059Z"
   }
 ]
