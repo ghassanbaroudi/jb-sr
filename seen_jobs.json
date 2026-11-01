@@ -3435,5 +3435,47 @@
     "company": "OFWAT",
     "matched": false,
     "date": "2026-10-31T16:28:22.742Z"
+  },
+  {
+    "id": "5948861023",
+    "title": "2027 Graduate Programme - Operations",
+    "company": "Rothesay Graduates",
+    "matched": true,
+    "date": "2026-11-01T10:52:27.657Z"
+  },
+  {
+    "id": "5949009114",
+    "title": "Financial Analyst - London",
+    "company": "Arcade Food Hall",
+    "matched": true,
+    "date": "2026-11-01T10:52:34.656Z"
+  },
+  {
+    "id": "5949009202",
+    "title": "Wellness Coordinator Analyst",
+    "company": "Nuffield Health",
+    "matched": false,
+    "date": "2026-11-01T10:52:41.029Z"
+  },
+  {
+    "id": "5949009648",
+    "title": "Wellness Coordinator Analyst",
+    "company": "Nuffield Health",
+    "matched": false,
+    "date": "2026-11-01T10:52:47.486Z"
+  },
+  {
+    "id": "5948635314",
+    "title": "Conflicts Clearance Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": false,
+    "date": "2026-11-01T10:52:54.069Z"
+  },
+  {
+    "id": "5948635279",
+    "title": "IT Helpdesk Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": false,
+    "date": "2026-11-01T10:53:00.597Z"
   }
 ]
