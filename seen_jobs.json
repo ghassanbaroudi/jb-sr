@@ -3505,5 +3505,40 @@
     "company": "Hackajob Ltd",
     "matched": false,
     "date": "2026-11-02T11:46:49.286Z"
+  },
+  {
+    "id": "5950680759",
+    "title": "Trainee/Graduate Recruitment Consultant",
+    "company": "SW6 Associates Limited",
+    "matched": false,
+    "date": "2026-11-02T20:58:41.012Z"
+  },
+  {
+    "id": "5950683915",
+    "title": "Business Analyst",
+    "company": "Experis UK",
+    "matched": false,
+    "date": "2026-11-02T20:58:47.900Z"
+  },
+  {
+    "id": "5950683898",
+    "title": "PMO Onboarding Analyst",
+    "company": "Experis UK",
+    "matched": false,
+    "date": "2026-11-02T20:58:54.370Z"
+  },
+  {
+    "id": "5950683907",
+    "title": "Senior Business Analyst - Workstream Lead",
+    "company": "Experis UK",
+    "matched": false,
+    "date": "2026-11-02T20:59:00.831Z"
+  },
+  {
+    "id": "5950683858",
+    "title": "Business Analyst (Agile Product Team), Defence & Security",
+    "company": "Experis UK",
+    "matched": true,
+    "date": "2026-11-02T20:59:07.986Z"
   }
 ]
