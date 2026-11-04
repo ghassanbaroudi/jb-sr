@@ -3554,5 +3554,19 @@
     "company": "Jazz Pharmaceuticals",
     "matched": false,
     "date": "2026-11-03T21:20:36.504Z"
+  },
+  {
+    "id": "5952183540",
+    "title": "Trainee/Graduate Recruitment Consultant",
+    "company": "SW6 Associates Limited",
+    "matched": false,
+    "date": "2026-11-04T03:44:21.170Z"
+  },
+  {
+    "id": "5949935493",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-11-04T03:44:28.331Z"
   }
 ]
