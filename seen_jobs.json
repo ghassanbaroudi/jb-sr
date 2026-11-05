@@ -3596,5 +3596,12 @@
     "company": "Allianz",
     "matched": false,
     "date": "2026-11-04T18:59:48.488Z"
+  },
+  {
+    "id": "5953340451",
+    "title": "Senior Financial Analyst",
+    "company": "Allianz",
+    "matched": true,
+    "date": "2026-11-05T00:35:18.473Z"
   }
 ]
