@@ -3603,5 +3603,33 @@
     "company": "Allianz",
     "matched": true,
     "date": "2026-11-05T00:35:18.473Z"
+  },
+  {
+    "id": "5954028173",
+    "title": "Tax Graduate Programme 2027",
+    "company": "Arch Capital Group",
+    "matched": true,
+    "date": "2026-11-05T11:42:08.127Z"
+  },
+  {
+    "id": "5954024791",
+    "title": "Technology & Change Graduate Programme 2027",
+    "company": "Arch Capital Group",
+    "matched": false,
+    "date": "2026-11-05T11:42:14.744Z"
+  },
+  {
+    "id": "5953335168",
+    "title": "Data Analyst",
+    "company": "Allianz",
+    "matched": true,
+    "date": "2026-11-05T11:42:21.875Z"
+  },
+  {
+    "id": "5952867037",
+    "title": "Intelligence Analyst",
+    "company": "National Crime Agency",
+    "matched": false,
+    "date": "2026-11-05T11:42:28.275Z"
   }
 ]
