@@ -3673,5 +3673,19 @@
     "company": "Placemently",
     "matched": false,
     "date": "2026-11-05T19:12:20.957Z"
+  },
+  {
+    "id": "5952836295",
+    "title": "Financial Reporting Analyst",
+    "company": "Larbey Evans Ltd",
+    "matched": true,
+    "date": "2026-11-06T00:36:50.333Z"
+  },
+  {
+    "id": "5954107178",
+    "title": "Conflicts Check Analyst",
+    "company": "Integreon",
+    "matched": false,
+    "date": "2026-11-06T00:36:56.916Z"
   }
 ]
