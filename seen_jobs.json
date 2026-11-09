@@ -3778,5 +3778,33 @@
     "company": "Capital One UK",
     "matched": true,
     "date": "2026-11-09T12:17:21.002Z"
+  },
+  {
+    "id": "5927951521",
+    "title": "Graduate Commercial Programme",
+    "company": "Pareto",
+    "matched": true,
+    "date": "2026-11-09T23:53:55.748Z"
+  },
+  {
+    "id": "5959544784",
+    "title": "Trainee Cyber Security Analyst",
+    "company": "Placemently",
+    "matched": false,
+    "date": "2026-11-09T23:54:02.213Z"
+  },
+  {
+    "id": "5949106672",
+    "title": "Pricing Analyst - Ocean Services",
+    "company": "First Choice Staff",
+    "matched": true,
+    "date": "2026-11-09T23:54:09.293Z"
+  },
+  {
+    "id": "5953184552",
+    "title": "Pricing Analyst - Clapham Junction",
+    "company": "The Gym Group",
+    "matched": true,
+    "date": "2026-11-09T23:54:16.254Z"
   }
 ]
