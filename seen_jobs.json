@@ -3764,5 +3764,19 @@
     "company": "City Recruitment Associates Ltd",
     "matched": true,
     "date": "2026-11-08T17:21:11.403Z"
+  },
+  {
+    "id": "5958704920",
+    "title": "Senior Business Analyst",
+    "company": "Capital One UK",
+    "matched": false,
+    "date": "2026-11-09T12:17:13.199Z"
+  },
+  {
+    "id": "5958704947",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-11-09T12:17:21.002Z"
   }
 ]
