@@ -3813,5 +3813,26 @@
     "company": "Placemently",
     "matched": false,
     "date": "2026-11-10T05:02:22.091Z"
+  },
+  {
+    "id": "5952799929",
+    "title": "2027 Graduate Programme - Operations - Asset Operations",
+    "company": "Rothesay Graduates",
+    "matched": true,
+    "date": "2026-11-10T15:54:42.569Z"
+  },
+  {
+    "id": "5960245328",
+    "title": "Security Operations Analyst",
+    "company": "Zopa Bank",
+    "matched": false,
+    "date": "2026-11-10T15:54:48.948Z"
+  },
+  {
+    "id": "5960245155",
+    "title": "Finance Systems Analyst",
+    "company": "Zopa Bank",
+    "matched": true,
+    "date": "2026-11-10T15:54:55.977Z"
   }
 ]
