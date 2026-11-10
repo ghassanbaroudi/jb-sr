@@ -3834,5 +3834,19 @@
     "company": "Zopa Bank",
     "matched": true,
     "date": "2026-11-10T15:54:55.977Z"
+  },
+  {
+    "id": "5960508602",
+    "title": "Sourcing Analyst",
+    "company": "Harvey Nash",
+    "matched": true,
+    "date": "2026-11-10T21:32:44.507Z"
+  },
+  {
+    "id": "5956629126",
+    "title": "Senior Data Protection Analyst",
+    "company": "Vitality Corporate Services Limited",
+    "matched": false,
+    "date": "2026-11-10T21:32:51.001Z"
   }
 ]
