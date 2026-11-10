@@ -3806,5 +3806,12 @@
     "company": "The Gym Group",
     "matched": true,
     "date": "2026-11-09T23:54:16.254Z"
+  },
+  {
+    "id": "5954170422",
+    "title": "Trainee Cyber Security Analyst",
+    "company": "Placemently",
+    "matched": false,
+    "date": "2026-11-10T05:02:22.091Z"
   }
 ]
