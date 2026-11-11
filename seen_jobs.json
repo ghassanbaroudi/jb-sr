@@ -3848,5 +3848,47 @@
     "company": "Vitality Corporate Services Limited",
     "matched": false,
     "date": "2026-11-10T21:32:51.001Z"
+  },
+  {
+    "id": "5961481638",
+    "title": "Marsh Governance Analyst Graduate Programme 2027",
+    "company": "Marsh McLennan",
+    "matched": true,
+    "date": "2026-11-11T11:32:06.063Z"
+  },
+  {
+    "id": "5952798351",
+    "title": "2027 Business Transformation Solutions Graduate Programme",
+    "company": "Schroders",
+    "matched": true,
+    "date": "2026-11-11T11:32:13.144Z"
+  },
+  {
+    "id": "5961084984",
+    "title": "HR Analyst",
+    "company": "Lorien Resourcing Limited",
+    "matched": false,
+    "date": "2026-11-11T11:32:19.559Z"
+  },
+  {
+    "id": "5961503230",
+    "title": "HRIS Analyst",
+    "company": "Motability Operations",
+    "matched": false,
+    "date": "2026-11-11T11:32:25.884Z"
+  },
+  {
+    "id": "5961549570",
+    "title": "Senior Billing Analyst",
+    "company": "Intercontinental Exchange Holdings",
+    "matched": false,
+    "date": "2026-11-11T11:32:32.282Z"
+  },
+  {
+    "id": "5961289638",
+    "title": "Data Analyst",
+    "company": "Black Sheep Coffee Head Office",
+    "matched": false,
+    "date": "2026-11-11T11:32:38.903Z"
   }
 ]
