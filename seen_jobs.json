@@ -3974,5 +3974,26 @@
     "company": "Hackajob Ltd",
     "matched": true,
     "date": "2026-11-13T00:46:50.529Z"
+  },
+  {
+    "id": "5964370641",
+    "title": "Trainee/Graduate Recruitment Consultant",
+    "company": "SW6 Associates Limited",
+    "matched": false,
+    "date": "2026-11-13T11:41:12.220Z"
+  },
+  {
+    "id": "5964252848",
+    "title": "Credit Risk Analyst",
+    "company": "Lorien Resourcing Limited",
+    "matched": true,
+    "date": "2026-11-13T11:41:19.190Z"
+  },
+  {
+    "id": "5964253072",
+    "title": "Cloud FinOps Analyst",
+    "company": "Manufacturing Recruitment Limited",
+    "matched": true,
+    "date": "2026-11-13T11:41:25.924Z"
   }
 ]
