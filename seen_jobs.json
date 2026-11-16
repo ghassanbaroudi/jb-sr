@@ -4037,5 +4037,40 @@
     "company": "Capital One UK",
     "matched": true,
     "date": "2026-11-16T12:10:53.446Z"
+  },
+  {
+    "id": "5968275159",
+    "title": "Privacy and Compliance Analyst",
+    "company": "BCM One",
+    "matched": false,
+    "date": "2026-11-16T23:53:37.214Z"
+  },
+  {
+    "id": "5948023482",
+    "title": "Stock Accounting Analyst",
+    "company": "Morgan McKinley",
+    "matched": false,
+    "date": "2026-11-16T23:53:43.542Z"
+  },
+  {
+    "id": "5831982761",
+    "title": "Senior Business Analyst",
+    "company": "twentyAI",
+    "matched": false,
+    "date": "2026-11-16T23:53:50.151Z"
+  },
+  {
+    "id": "5960288861",
+    "title": "Salesforce Business Analyst",
+    "company": "Anson McCade",
+    "matched": false,
+    "date": "2026-11-16T23:53:56.932Z"
+  },
+  {
+    "id": "5960619964",
+    "title": "Business Analyst - Compliance",
+    "company": "Emagine Consulting",
+    "matched": true,
+    "date": "2026-11-16T23:54:03.813Z"
   }
 ]
