@@ -4149,5 +4149,40 @@
     "company": "FDM Group",
     "matched": true,
     "date": "2026-11-21T15:43:55.848Z"
+  },
+  {
+    "id": "5969062643",
+    "title": "Risk Analyst - Lorien",
+    "company": "Lorien",
+    "matched": true,
+    "date": "2026-11-22T21:23:09.795Z"
+  },
+  {
+    "id": "5973951075",
+    "title": "Trade Operations Analyst",
+    "company": "Intercontinental Exchange",
+    "matched": true,
+    "date": "2026-11-22T21:23:16.897Z"
+  },
+  {
+    "id": "5969062472",
+    "title": "Client Onboarding Analyst",
+    "company": "Emagine Consulting",
+    "matched": true,
+    "date": "2026-11-22T21:23:23.915Z"
+  },
+  {
+    "id": "5955574911",
+    "title": "Cyber Business Analyst",
+    "company": "Emagine Consulting",
+    "matched": true,
+    "date": "2026-11-22T21:23:30.911Z"
+  },
+  {
+    "id": "5959517151",
+    "title": "Finance Analyst - Tether",
+    "company": "Tether",
+    "matched": true,
+    "date": "2026-11-22T21:23:37.985Z"
   }
 ]
