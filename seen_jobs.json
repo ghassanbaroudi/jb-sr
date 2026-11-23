@@ -4198,5 +4198,33 @@
     "company": "Capital One UK",
     "matched": false,
     "date": "2026-11-23T04:33:11.742Z"
+  },
+  {
+    "id": "5975660266",
+    "title": "Senior Strategy Analyst",
+    "company": "Capital One UK",
+    "matched": true,
+    "date": "2026-11-23T19:36:38.384Z"
+  },
+  {
+    "id": "5941495342",
+    "title": "Senior Billing Analyst",
+    "company": "Intercontinental Exchange",
+    "matched": false,
+    "date": "2026-11-23T19:36:44.909Z"
+  },
+  {
+    "id": "5949102926",
+    "title": "Analyst, Renewables Markets",
+    "company": "S&P Global",
+    "matched": true,
+    "date": "2026-11-23T19:36:52.160Z"
+  },
+  {
+    "id": "5963698511",
+    "title": "Risk Analytics Analyst / Senior Analyst - G MASS Consulting",
+    "company": "G MASS Consulting",
+    "matched": true,
+    "date": "2026-11-23T19:36:59.256Z"
   }
 ]
