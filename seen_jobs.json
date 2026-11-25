@@ -4247,5 +4247,180 @@
     "company": "Pfizer",
     "matched": false,
     "date": "2026-11-25T03:14:00.067Z"
+  },
+  {
+    "id": "5978177058",
+    "title": "Future Finance Graduate Programme",
+    "company": "Hastings Insurance Services",
+    "matched": true,
+    "date": "2026-11-25T13:41:39.615Z"
+  },
+  {
+    "id": "5977285618",
+    "title": "Finance Business Analyst  Transformation",
+    "company": "Global Corporate Investment Bank",
+    "matched": true,
+    "date": "2026-11-25T13:41:46.309Z"
+  },
+  {
+    "id": "5954219403",
+    "title": "Corporate Credit Risk Analyst",
+    "company": "Global Corporate Investment Bank",
+    "matched": false,
+    "date": "2026-11-25T13:41:52.884Z"
+  },
+  {
+    "id": "5973991374",
+    "title": "Interim Compensation Analyst 12-month FTC",
+    "company": "Frazer Jones",
+    "matched": false,
+    "date": "2026-11-25T13:41:59.417Z"
+  },
+  {
+    "id": "5971445147",
+    "title": "Analyst",
+    "company": "OMPHDMUK PHD Media Limited",
+    "matched": false,
+    "date": "2026-11-25T13:42:05.808Z"
+  },
+  {
+    "id": "5972735432",
+    "title": "Analyst",
+    "company": "Howden",
+    "matched": true,
+    "date": "2026-11-25T13:42:12.554Z"
+  },
+  {
+    "id": "5965585812",
+    "title": "Analyst",
+    "company": "Sainsbury's",
+    "matched": true,
+    "date": "2026-11-25T13:42:19.576Z"
+  },
+  {
+    "id": "5956696781",
+    "title": "Analyst",
+    "company": "Schroders",
+    "matched": true,
+    "date": "2026-11-25T13:42:26.574Z"
+  },
+  {
+    "id": "5964299352",
+    "title": "Analyst",
+    "company": "Sainsbury's",
+    "matched": true,
+    "date": "2026-11-25T13:42:33.280Z"
+  },
+  {
+    "id": "5973933045",
+    "title": "Analyst",
+    "company": "ICF",
+    "matched": false,
+    "date": "2026-11-25T13:42:39.804Z"
+  },
+  {
+    "id": "5974638950",
+    "title": "Analyst",
+    "company": "ICF",
+    "matched": false,
+    "date": "2026-11-25T13:42:46.305Z"
+  },
+  {
+    "id": "5974638945",
+    "title": "Analyst",
+    "company": "ICF",
+    "matched": false,
+    "date": "2026-11-25T13:42:52.676Z"
+  },
+  {
+    "id": "5974913291",
+    "title": "Analyst",
+    "company": "ICF",
+    "matched": false,
+    "date": "2026-11-25T13:42:58.946Z"
+  },
+  {
+    "id": "5967678484",
+    "title": "Leveraged Finance Credit Risk Analyst",
+    "company": "Global Corporate Investment Bank",
+    "matched": false,
+    "date": "2026-11-25T13:43:05.341Z"
+  },
+  {
+    "id": "5954880157",
+    "title": "Acquisitions Analyst / Sr Analyst",
+    "company": "MCR Property Group",
+    "matched": true,
+    "date": "2026-11-25T13:43:12.276Z"
+  },
+  {
+    "id": "5963459513",
+    "title": "Risk Analytics Analyst / Senior Analyst",
+    "company": "G MASS",
+    "matched": true,
+    "date": "2026-11-25T13:43:19.435Z"
+  },
+  {
+    "id": "5946065434",
+    "title": "Business Analyst",
+    "company": "3H Partners",
+    "matched": true,
+    "date": "2026-11-25T13:43:26.438Z"
+  },
+  {
+    "id": "5969341798",
+    "title": "Data Analyst",
+    "company": "SR2 REC LTD",
+    "matched": false,
+    "date": "2026-11-25T13:43:32.750Z"
+  },
+  {
+    "id": "5968768358",
+    "title": "Data Analyst",
+    "company": "SR2 REC LTD",
+    "matched": false,
+    "date": "2026-11-25T13:43:39.204Z"
+  },
+  {
+    "id": "5968049135",
+    "title": "Data Analyst",
+    "company": "Lancesoft Europe",
+    "matched": false,
+    "date": "2026-11-25T13:43:45.446Z"
+  },
+  {
+    "id": "5969333061",
+    "title": "Change Analyst",
+    "company": "Mentmore Recruitment Ltd",
+    "matched": false,
+    "date": "2026-11-25T13:43:51.770Z"
+  },
+  {
+    "id": "5769453745",
+    "title": "Business Analyst",
+    "company": "Hamiltonian Dynamics",
+    "matched": true,
+    "date": "2026-11-25T13:43:58.740Z"
+  },
+  {
+    "id": "5971254596",
+    "title": "Risk Analyst",
+    "company": "Oliver James Associates",
+    "matched": true,
+    "date": "2026-11-25T13:44:05.565Z"
+  },
+  {
+    "id": "5970903167",
+    "title": "PMO Analyst",
+    "company": "Netcompany",
+    "matched": true,
+    "date": "2026-11-25T13:44:12.775Z"
+  },
+  {
+    "id": "5950934948",
+    "title": "Finance Analyst",
+    "company": "Harper May",
+    "matched": true,
+    "date": "2026-11-25T13:44:19.613Z"
   }
 ]
