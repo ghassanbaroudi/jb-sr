@@ -4422,5 +4422,40 @@
     "company": "Harper May",
     "matched": true,
     "date": "2026-11-25T13:44:19.613Z"
+  },
+  {
+    "id": "5978749307",
+    "title": "Liquidity Analyst",
+    "company": "Global Inter-Dealer Broker firm",
+    "matched": false,
+    "date": "2026-11-25T23:51:29.156Z"
+  },
+  {
+    "id": "5961547116",
+    "title": "Analyst - Business Insights - 12 months FTC",
+    "company": "Travelers",
+    "matched": true,
+    "date": "2026-11-25T23:51:36.369Z"
+  },
+  {
+    "id": "5978553339",
+    "title": "Analyst",
+    "company": "ICF",
+    "matched": false,
+    "date": "2026-11-25T23:51:42.922Z"
+  },
+  {
+    "id": "5978555289",
+    "title": "Analyst",
+    "company": "OMPHDMUK PHD Media Limited",
+    "matched": true,
+    "date": "2026-11-25T23:51:50.143Z"
+  },
+  {
+    "id": "5978555249",
+    "title": "Analyst",
+    "company": "Howden Deutschland AG",
+    "matched": false,
+    "date": "2026-11-25T23:51:56.667Z"
   }
 ]
