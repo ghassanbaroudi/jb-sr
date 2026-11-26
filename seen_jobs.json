@@ -4464,5 +4464,12 @@
     "company": "EY",
     "matched": false,
     "date": "2026-11-26T05:49:07.628Z"
+  },
+  {
+    "id": "5979405848",
+    "title": "Analyst",
+    "company": "Zable",
+    "matched": true,
+    "date": "2026-11-26T17:57:18.274Z"
   }
 ]
