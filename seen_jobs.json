@@ -4485,5 +4485,33 @@
     "company": "Spectrum IT",
     "matched": false,
     "date": "2026-11-27T02:31:20.270Z"
+  },
+  {
+    "id": "5979389255",
+    "title": "Future Finance Graduate Programme",
+    "company": "Hastings Insurance Services",
+    "matched": true,
+    "date": "2026-11-27T13:17:09.961Z"
+  },
+  {
+    "id": "5980050149",
+    "title": "Analyst",
+    "company": "Harnham - Data & Analytics Recruitment",
+    "matched": true,
+    "date": "2026-11-27T13:17:16.829Z"
+  },
+  {
+    "id": "5979398262",
+    "title": "UK Analyst / Senior Analyst",
+    "company": "PSB Insights",
+    "matched": true,
+    "date": "2026-11-27T13:17:23.795Z"
+  },
+  {
+    "id": "5980207144",
+    "title": "Conflicts Analyst",
+    "company": "Montresor Legal",
+    "matched": false,
+    "date": "2026-11-27T13:17:30.106Z"
   }
 ]
